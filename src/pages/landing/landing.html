@@ -1,0 +1,29 @@
+<ion-header [ngClass]="{'expanded': expanded}">
+  <ion-navbar color="primary"></ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+ 	<div class="Loginpage">
+	  <div class="formContainer">
+
+      <form class="app-form" padding>
+        <ion-list>
+          <p>Enter your mobile number</p>
+          <ion-item no-padding>
+          	<ion-select >
+					    <ion-option selected>+61</ion-option>
+					    <ion-option>+45</ion-option>
+					    <ion-option>+23</ion-option>
+					    <ion-option>+64</ion-option>
+					    <ion-option>+12</ion-option>
+					    <ion-option>+42</ion-option>
+  					</ion-select>
+            <ion-input type="number" placeholder="number" value="phonenumber"></ion-input>
+          </ion-item>
+        </ion-list>
+        <button ion-button block color="secondary" (click)="dolanding()">Continue</button>
+      </form>
+	  </div>
+  </div>
+</ion-content>

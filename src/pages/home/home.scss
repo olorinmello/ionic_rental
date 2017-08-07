@@ -36,3 +36,18 @@ page-home {
         font-size: 1.5rem;
     }
 }
+.searchbar{
+    .searchbar-input{
+        border-bottom: 1px solid color($colors , light);
+    }
+    .searchbar-search-icon{
+        left: 2px;
+    }
+    .searchbar-input{
+        padding-left: 35px;
+        padding-bottom: 0;
+    }
+    input::-webkit-input-placeholder {
+        font-size: 1.2rem;
+    }
+}

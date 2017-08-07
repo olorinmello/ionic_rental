@@ -1,0 +1,51 @@
+page-search {
+	.radio-wrapper {
+    display: inline-flex;
+    padding: 0 5px;
+    .item-radio {
+        border: medium none;
+        width: 24px;
+        .radio-icon {
+          padding: 0;
+        }
+        .radio-icon:before{
+            content: "";
+            border:1px solid black;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            overflow:hidden;
+        }
+    }
+    .item-radio input:checked + .radio-content .radio-icon:before{
+      color: #fff;
+      background-color: blue;
+      content: "\F122";
+    }
+	}
+}
+.radio-icon{  visibility: visible!important;}
+.radio-wrapper {
+  display: inline-flex;
+  padding: 0 5px;
+  .item-radio {
+      border: medium none;
+      width: 24px;
+      .radio-icon {
+        padding: 0;
+      }
+      .radio-icon:before{
+          content: "";
+          border:1px solid black;
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          overflow:hidden;
+      }
+  }
+  .item-radio input:checked + .radio-content .radio-icon:before{
+    color: #fff;
+    background-color: blue;
+    content: "\F122";
+  }
+}
