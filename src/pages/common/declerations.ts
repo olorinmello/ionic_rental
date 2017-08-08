@@ -28,6 +28,7 @@ import { AlertdetailPage } from '../alertdetail/alertdetail';
 import { ChatdetailPage } from '../chatdetail/chatdetail';
 import { SearchPage } from '../search/search';
 import { MapPage } from '../map/map';
+import { SearchresultPage } from '../searchresult/searchresult';
 
 
 export const allPages = {
@@ -59,5 +60,6 @@ export const allPages = {
 		AlertdetailPage,
 		ChatdetailPage,
 		SearchPage,
-		MapPage
+		MapPage,
+		SearchresultPage
 };

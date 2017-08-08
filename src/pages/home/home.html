@@ -1,20 +1,23 @@
 
-<ion-header [ngClass]="{'expanded': expanded}">
+<ion-header >
 
   <ion-navbar color="primary" hideBackButton="true">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title text-capitalize>home</ion-title>
-    <!-- <ion-item class="item-md">
-      <button  [navPush]="profile"  item-left><ion-icon name="ios-contact"></ion-icon></button>
+    <ion-row>
+      <ion-col class="icon-col" col-1>
+         <button  [navPush]="profile"  item-left><ion-icon name="ios-contact"></ion-icon></button>
+      </ion-col>
+      <ion-col class="icon-col" col-8>
+        <ion-searchbar  class="searchbar" placeholder="Find items near you"></ion-searchbar>
+      </ion-col>
+      <ion-col class="icon-col" col-1>
       <button [navPush]="search" item-right><ion-icon name="ios-funnel"></ion-icon></button>
-    </ion-item> -->
-     <ion-searchbar [navPush]="search" class="searchbar" placeholder="City, State or ZIP"></ion-searchbar>
+      </ion-col>
+    </ion-row>
   </ion-navbar>
-
 </ion-header>
-
 
 <ion-content>
   <!-- <ion-fab top right edge>
@@ -23,11 +26,11 @@
   <ion-card-content>
     <ion-item>
       <div item-left>Near you now</div>
-      <button item-right>see all<ion-icon name="ios-arrow-forward"></ion-icon></button>
+      <button item-right [navPush]="list">see all<ion-icon name="ios-arrow-forward"></ion-icon></button>
     </ion-item>
     <ion-scroll scrollX="true" style="overflow: scroll; white-space: nowrap; height: 23vh;" >
       <div *ngFor="let item of neargrid" style="display: inline-block;white-space: nowrap; " class="workContentContainer">
-        <img src="{{item.img}}" style="margin: 0.5vh; display: inline-block; height: 17vh;">
+        <img [navPush]="details" src="{{item.img}}" style="margin: 0.5vh; display: inline-block; height: 17vh;">
         <div> {{item.title}} </div>
       </div>
     </ion-scroll>
@@ -35,11 +38,11 @@
   <ion-card-content>
     <ion-item>
       <div item-left>Category Name</div>
-      <button item-right>see all<ion-icon name="ios-arrow-forward"></ion-icon></button>
+      <button [navPush]="list" item-right>see all<ion-icon name="ios-arrow-forward"></ion-icon></button>
     </ion-item>
     <ion-scroll scrollX="true" style="overflow: scroll;white-space: nowrap; height: 23vh" >
       <div *ngFor="let item of categorygrid" style="display: inline-block;white-space: nowrap; " class="workContentContainer">
-        <img src="{{item.img}}" style="margin: 0.5vh; display: inline-block; height: 17vh;">
+        <img [navPush]="details" src="{{item.img}}" style="margin: 0.5vh; display: inline-block; height: 17vh;">
         <div> {{item.title}} </div>
       </div>
     </ion-scroll>

@@ -2,6 +2,8 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { allPages } from '../pages/common/declerations';
+import { NgCalendarModule  } from 'ionic2-calendar';
+
 
 var APP_Pages = [];
   for(let i in allPages){

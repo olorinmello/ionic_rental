@@ -5,6 +5,7 @@ import { MapModal } from '../modal-page/modal-page';
 
 import { Profile } from '../profile/profile';
 import { SearchPage } from '../search/search';
+import { Details } from '../details/details';
 
 @Component({
   selector: 'page-home',
@@ -12,14 +13,15 @@ import { SearchPage } from '../search/search';
 })
 export class Home {
 
-  profile=Profile;
-  search=SearchPage;
   expanded: Boolean;
   grid: Array<any>;
   neargrid: Array<any>;
   categorygrid: Array<any>;
 
+  profile=Profile;
+  search=SearchPage;
   list = List;
+  details=Details;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {
     this.expanded = true;

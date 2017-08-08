@@ -4,7 +4,7 @@
   <ion-toolbar>
 
     <ion-segment [(ngModel)]="own_rent"  class="segment_info" color="secondary">
-      <ion-icon style="margin-right: 40px; align-content: left" name="md-heart"></ion-icon>
+      <ion-icon [navPush]="favourites" style="margin-right: 40px; align-content: left" name="md-heart"></ion-icon>
       <ion-segment-button  value="own">
         I Own
       </ion-segment-button>

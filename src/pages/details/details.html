@@ -1,6 +1,8 @@
 
 <ion-header [ngClass]="{'colorOfHeader': detect_position()}">
-  <ion-navbar></ion-navbar>
+  <ion-navbar>
+    <ion-icon name="md-heart" style="align:right;"(click)="ActiveLike()" [ngClass]="{'activeColor':like}"></ion-icon>
+  </ion-navbar>
 </ion-header>
 
 
@@ -48,7 +50,6 @@
         </ion-col>
       </ion-row>
       <button class="scroll-btn" (click)="goto();"><ion-icon name="ios-arrow-down" color="light"></ion-icon></button>
-      
     </ion-grid>
   </div>
 
@@ -56,7 +57,7 @@
   <div class="more-details" padding>
 
     <ion-card text-left>
-  <!--           section of Head          -->
+        <!--           section of Head          -->
         <ion-card-content>
           <ion-card-title color="light" no-padding>
             Stylish house
@@ -72,7 +73,7 @@
          <p color="graylight" no-margin>Paradeplein, 2018 Antwerp, Belgium</p>
         </ion-card-content>
 
-<!--           section of Description          -->
+        <!--           section of Description          -->
         <ion-card-content>     
           <h3 color="light">Description</h3>
           <p color="graytext">Spectacular gated custom-built, with private front and rear 
@@ -85,7 +86,7 @@
           the 405 and 10 freeways, LAX, Downtown Los Angeles. </p>
         </ion-card-content>
 
-<!--           section of Details          -->
+        <!--           section of Details          -->
         <ion-card-content>        
           <aside>
             <ion-grid class="grid-info" no-margin no-padding>
@@ -110,7 +111,7 @@
           </aside>
         </ion-card-content>
 
-<!--           section of Images          -->
+      <!--           section of Images          -->
       <ion-card-content>       
           <aside class="images" margin-bottom>
             <h3 color="light">Images</h3>
@@ -133,7 +134,6 @@
           </aside>
         </ion-card-content>
       </ion-card>
-
   </div>
 
 <ion-fab *ngIf="showFooter" right bottom>

@@ -21,6 +21,8 @@ export class Details implements OnInit {
   private tabBarHeight;
   like: any;
  
+  itemlist: Array<any>;
+
   constructor(public navCtrl: NavController, public navParams: NavParams, public myElement: ElementRef, public modalCtrl: ModalController, public zone:NgZone)  {} 
 
     ngOnInit(){
