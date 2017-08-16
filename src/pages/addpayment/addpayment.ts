@@ -1,26 +1,28 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
-import { FinishsignPage } from '../finishsign/finishsign';
+import { PaypalPage } from '../paypal/paypal';
+import { CreditPage } from '../credit/credit';
 
 /*
-  Generated class for the SignupPage page.
+  Generated class for the AddpaymentPage page.
 
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 */
 @Component({
-  selector: 'page-signup',
-  templateUrl: 'signup.html'
+  selector: 'page-addpayment',
+  templateUrl: 'addpayment.html'
 })
-export class SignupPage {
+export class AddpaymentPage {
 
-	finishsign=FinishsignPage;
+	credit=CreditPage;
+	paypal=PaypalPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad SignupPagePage');
+    console.log('ionViewDidLoad AddpaymentPagePage');
   }
 
 }

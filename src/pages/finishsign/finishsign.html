@@ -1,5 +1,5 @@
 <!--
-  Generated template for the SignupPage page.
+  Generated template for the FinishsignPage page.
 
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
@@ -7,7 +7,6 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>signup</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -17,36 +16,40 @@
 	<div>
     <ul id="progressbar" align="center">
       <li ></li>
+      <li ></li>
       <li class="active"></li>
-      <li></li>
     </ul>
   </div>
-  <button>Use your Facebook profile</button>
   <br>
   <div align="center">
-    <h5>OR</h5>
     <form class="app-form" padding>
       <ion-list>
         <ion-label align=left>
-          Enter your email address
+          Enter your first name
         </ion-label>
         <ion-item no-padding>
-          <ion-input type="Email" placeholder="email"></ion-input>
+          <ion-input type="text" placeholder="name"></ion-input>
         </ion-item>
         <ion-label align=left>
-          Enter a password
+          Enter your last name
         </ion-label>
         <ion-item no-padding>
-          <ion-input type="Password" placeholder="password"></ion-input>
+          <ion-input type="text" placeholder="name"></ion-input>
         </ion-item>
         <ion-label align=left>
-          Re-enter your password
+          Re-enter your postal code
         </ion-label>
         <ion-item no-padding>
-          <ion-input type="Password" placeholder="password"></ion-input>
+          <ion-input type="Number" placeholder="postal code"></ion-input>
         </ion-item>
+        <ion-item>
+        	<ion-label>
+        		Agree to the terms and conditions
+        	</ion-label>
+					<ion-toggle item-right  color="secondary"></ion-toggle>
+				</ion-item>
       </ion-list>
-      <button ion-button block color="secondary" [navPush]="finishsign">Continue</button>
+      <button ion-button block color="secondary" [navPush]="home">Continue</button>
     </form>
   </div>
 </ion-content>

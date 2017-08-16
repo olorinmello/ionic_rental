@@ -1,26 +1,22 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
-import { FinishsignPage } from '../finishsign/finishsign';
-
 /*
-  Generated class for the SignupPage page.
+  Generated class for the AcceptPage page.
 
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 */
 @Component({
-  selector: 'page-signup',
-  templateUrl: 'signup.html'
+  selector: 'page-accept',
+  templateUrl: 'accept.html'
 })
-export class SignupPage {
-
-	finishsign=FinishsignPage;
+export class AcceptPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad SignupPagePage');
+    console.log('ionViewDidLoad AcceptPagePage');
   }
 
 }

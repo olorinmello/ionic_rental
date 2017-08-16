@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
+import { Profile } from '../profile/profile';
+import { Details } from '../details/details';
+
+
 /*
   Generated class for the ChatdetailPage page.
 
@@ -13,7 +17,16 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class ChatdetailPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+	Chatdetail: any;
+
+	profile=Profile;
+	details=Details;
+	
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  	 this.Chatdetail ={
+      img: 'assets/img/11.png', ownerimage:'assets/img/profile-img.png', item_title:'house', price:'25'}
+
+  }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ChatdetailPagePage');

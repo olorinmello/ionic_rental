@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 import { Likes } from '../likes/likes';      //favourites screen
+import { Details } from '../details/details';
 
 
 @Component({
@@ -21,7 +22,8 @@ export class Myrent {
   isavailable:string="available";
 
   favourites=Likes;
-
+  details=Details;
+  
   constructor(public navCtrl: NavController, public navParams: NavParams) {
 
     this.list=[{img: 'assets/img/11.png', title: 'Stylish house'}, {img: 'assets/img/22.png', title: 'Big Houses'}, {img: 'assets/img/33.png', title: 'Big Houses'}, {img: 'assets/img/11.png', title: 'Stylish house'},{img: 'assets/img/11.png', title: 'Stylish house'}, {img: 'assets/img/22.png', title: 'Big Houses'}, {img: 'assets/img/33.png', title: 'Big Houses'}, {img: 'assets/img/11.png', title: 'Stylish house'}]
