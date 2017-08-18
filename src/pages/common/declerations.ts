@@ -31,12 +31,6 @@ import { MapPage } from '../map/map';
 import { SearchresultPage } from '../searchresult/searchresult';
 import { RejectPage } from '../reject/reject';
 import { AcceptPage } from '../accept/accept';
-import { OtherprofilePage } from '../otherprofile/otherprofile';
-import { AddpaymentPage } from '../addpayment/addpayment';
-import { PaypalPage } from '../paypal/paypal';
-import { CreditPage } from '../credit/credit';
-import { EditprofilePage } from '../editprofile/editprofile';
-import { FinishsignPage } from '../finishsign/finishsign';
 
 
 export const allPages = {
@@ -71,11 +65,5 @@ export const allPages = {
 	MapPage,
 	SearchresultPage,
 	RejectPage,
-	AcceptPage,
-	OtherprofilePage,
-	AddpaymentPage,
-	CreditPage,
-	PaypalPage,
-	EditprofilePage,
-	FinishsignPage
+	AcceptPage
 };

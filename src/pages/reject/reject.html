@@ -12,20 +12,19 @@
 
 </ion-header>
 
+
 <ion-content padding>
 	<h4>Why are you rejecting the request?</h4>
 	<ion-list align="center" style="width: 60vw;">
-		<button class="rejectbutton"><ion-icon name="md-wifi"></ion-icon> Item is broken</button><br>
-		<button class="rejectbutton"><ion-icon name="ios-plane"></ion-icon> I am away and cannot rent</button><br>
-		<button class="rejectbutton"><ion-icon name="ios-flash"></ion-icon> Item is faulty</button>
+		<button><ion-icon name="md-wifi"></ion-icon> Item is broken</button><br>
+		<button><ion-icon name="ios-plane"></ion-icon> I am away and cannot rent</button><br>
+		<button><ion-icon name="ios-flash"></ion-icon> Item is faulty</button>
 	</ion-list>
 	<ion-item>
 		<ion-label>
 			Should this item be removed?
 		</ion-label><br>
+		<ion-checkbox></ion-checkbox>
 	</ion-item>
-	<ion-item align=center>
-		<ion-toggle align="center" [(ngModel)]="isChecked" color="secondary"></ion-toggle>
-	</ion-item>
-	<button class="rejectbutton">ok</button>
+	<button>ok</button>
 </ion-content>

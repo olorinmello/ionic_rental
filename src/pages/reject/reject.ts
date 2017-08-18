@@ -13,8 +13,6 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class RejectPage {
 
-	tracks: Array<{name: string, isChecked: boolean}> = [];
-
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {

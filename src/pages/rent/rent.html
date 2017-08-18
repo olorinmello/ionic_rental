@@ -16,14 +16,14 @@
   <h5 color="darken" >Requested by</h5>
   <ion-row>
     <ion-col col-4 align="center">
-      <img src="{{renter.img}}" [navPush]="otherprofile" style="display: inline-block; height: 15vw; width: 15vw">
+      <img src="{{renter.img}}" [navPush]="rentaccept" style="display: inline-block; height: 15vw; width: 15vw">
     </ion-col>
     <ion-col col-8 >
       <ion-label class="label_top">
         {{renter.name}}
       </ion-label>
       <ion-label class="label_top">
-        {{renter.address}}
+        ${{renter.address}}
       </ion-label>
       <ion-label class="label_top">
         <ion-icon name="md-star"></ion-icon>{{renter.rate}}

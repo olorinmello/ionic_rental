@@ -2,9 +2,6 @@ import { Component , Directive ,ViewChild } from '@angular/core';
 import { Nav, NavController, NavParams } from 'ionic-angular';
 import { Keyboard } from 'ionic-native';
 
-import { AddpaymentPage } from '../addpayment/addpayment';
-import { EditprofilePage } from '../editprofile/editprofile';
-
 
 @Component({
   selector: 'page-profile',
@@ -12,15 +9,7 @@ import { EditprofilePage } from '../editprofile/editprofile';
 })
 export class Profile {
 
-  addpayment=AddpaymentPage;
-  editprofile=EditprofilePage;
-  profile:any;
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.profile ={
-      img: 'assets/img/profile-img.png', name: 'John Doe', address:'Sydney Australia', rate:'4.5', rent_nuber: '10', owner_number: '20'
-    }
-  }
+  constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   focusInput(input){
     input.disabled=!input.disabled;

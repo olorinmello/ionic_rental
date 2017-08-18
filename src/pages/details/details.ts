@@ -5,7 +5,6 @@ import { MapModal } from '../modal-page/modal-page';
 import { ShareModal } from '../share-modal/share-modal';
 
 import { Geolocation} from 'ionic-native';
-import { AcceptPage } from '../accept/accept';
 
 declare var google;
 
@@ -27,7 +26,6 @@ export class Details implements OnInit {
   Product: any;
 
   rent=RentPage;
-  retrun=AcceptPage;  //return process
 
   @ViewChild('map') mapElement: ElementRef;
   map: any;

@@ -4,8 +4,6 @@ import { NavController, NavParams } from 'ionic-angular';
 import { Home } from '../home/home';
 import { RejectPage } from '../reject/reject';
 import { AcceptPage } from '../accept/accept';
-import { OtherprofilePage } from '../otherprofile/otherprofile';
-
 
 @Component({
   selector: 'page-rent',
@@ -15,7 +13,7 @@ export class RentPage {
 
   home = Home;
   rentreject=RejectPage;
-  otherprofile=OtherprofilePage;
+  rentaccept=AcceptPage;
   
   Product: any;
   renter:any;

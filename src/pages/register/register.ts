@@ -2,8 +2,6 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { Home } from '../home/home';
 
-import { SignupPage } from '../signup/signup';
-
 
 
 @Component({
@@ -12,7 +10,7 @@ import { SignupPage } from '../signup/signup';
 })
 export class Register {
 
-  home = SignupPage;
+  home = Home;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
