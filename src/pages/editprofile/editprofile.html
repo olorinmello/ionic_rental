@@ -1,0 +1,82 @@
+<!--
+  Generated template for the EditprofilePage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>editprofile</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div class="content-bg" padding >
+    <ion-list no-margin>
+      <div align="center"> 
+        <img align="center" class="profile-img" src="{{editprofile.img}}" />
+        <ion-icon class="icon_size" name="ios-create"></ion-icon>
+      </div>
+      <br>
+      <ion-item>
+      	<div item-left>
+      		<ion-label no-margin >
+	          First Name
+	        </ion-label >
+	        <ion-input no-margin type="text" placeholder="John" [(ngModel)]="firstname"></ion-input>
+      	</div>
+        <ion-icon name="ios-arrow-forward-outline" item-right ></ion-icon>
+      </ion-item>
+      <ion-item>
+      	<div item-left>
+      		<ion-label no-margin>
+	          Last Name
+	        </ion-label >
+	        <ion-input no-margin type="text" placeholder="Doe" [(ngModel)]="lastname"></ion-input>
+      	</div>
+        <ion-icon name="ios-arrow-forward-outline" item-right ></ion-icon>
+      </ion-item>
+      <ion-item>
+      	<div item-left>
+      		<ion-label no-margin>
+	          Mobile
+	        </ion-label >
+	        <ion-input no-margin type="Number" placeholder="021 123 4567" [(ngModel)]="mobilenumber"></ion-input>
+      	</div>
+        <ion-icon name="ios-arrow-forward-outline" item-right ></ion-icon>
+      </ion-item>
+      <ion-item>
+      	<div item-left>
+      		<ion-label no-margin>
+	          Email
+	        </ion-label >
+	        <ion-input no-margin type="Email" placeholder="john@gmail.com" [(ngModel)]="email"></ion-input>
+      	</div>
+        <ion-icon name="ios-arrow-forward-outline" item-right ></ion-icon>
+      </ion-item>
+      <ion-item>
+      	<div item-left>
+      		<ion-label no-margin>
+	          Password
+	        </ion-label >
+	        <ion-input no-margin type="Password"  [(ngModel)]="password"></ion-input>
+      	</div>
+        <ion-icon name="ios-arrow-forward-outline" item-right ></ion-icon>
+      </ion-item>
+      <ion-item>
+      	<div item-left>
+      		<ion-label no-margin>
+	          Postal Code
+	        </ion-label >
+	        <ion-input no-margin type="text" placeholder="0000" [(ngModel)]="Postalcode"></ion-input>
+      	</div>
+        <ion-icon name="ios-arrow-forward-outline" item-right ></ion-icon>
+      </ion-item>
+      <br>
+      <button align="center">Logout</button>
+    </ion-list>
+  </div>
+</ion-content>

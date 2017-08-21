@@ -1,24 +1,28 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
+import { PaypalPage } from '../paypal/paypal';
+import { CreditPage } from '../credit/credit';
+
 /*
-  Generated class for the RejectPage page.
+  Generated class for the AddpaymentPage page.
 
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 */
 @Component({
-  selector: 'page-reject',
-  templateUrl: 'reject.html'
+  selector: 'page-addpayment',
+  templateUrl: 'addpayment.html'
 })
-export class RejectPage {
+export class AddpaymentPage {
 
-	tracks: Array<{name: string, isChecked: boolean}> = [];
+	credit=CreditPage;
+	paypal=PaypalPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad RejectPagePage');
+    console.log('ionViewDidLoad AddpaymentPagePage');
   }
 
 }

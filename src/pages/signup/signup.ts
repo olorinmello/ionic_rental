@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
+import { FinishsignPage } from '../finishsign/finishsign';
+
 /*
   Generated class for the SignupPage page.
 
@@ -12,6 +14,8 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'signup.html'
 })
 export class SignupPage {
+
+	finishsign=FinishsignPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 

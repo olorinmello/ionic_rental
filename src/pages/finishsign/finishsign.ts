@@ -1,24 +1,26 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
+import { MenuPage } from '../menu/menu';
+
 /*
-  Generated class for the RejectPage page.
+  Generated class for the FinishsignPage page.
 
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 */
 @Component({
-  selector: 'page-reject',
-  templateUrl: 'reject.html'
+  selector: 'page-finishsign',
+  templateUrl: 'finishsign.html'
 })
-export class RejectPage {
+export class FinishsignPage {
 
-	tracks: Array<{name: string, isChecked: boolean}> = [];
+	home=MenuPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad RejectPagePage');
+    console.log('ionViewDidLoad FinishsignPagePage');
   }
 
 }

@@ -1,0 +1,65 @@
+<!--
+  Generated template for the CreditPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<h3 align="center">Add Credit Card</h3>
+	<ion-list>
+		<ion-label>
+			Card Number
+		</ion-label>
+		<ion-input style="border: solid, 1px, white;" type="Number" [(ngModel)]="cardnumber" value="email"></ion-input>
+		<br>
+		<ion-item>
+			<div item-left>
+				<ion-label>
+					Expiry Date
+				</ion-label>
+				<ion-input type="text" [(ngModel)]="expiryday" value="text"></ion-input>
+			</div>
+			<div item-right>
+				<ion-label>
+					CVV
+				</ion-label>
+				<ion-input type="text" [(ngModel)]="cvv" value="password"></ion-input>
+			</div>
+		</ion-item>
+		<ion-label>
+			Country
+		</ion-label>
+		<ion-item>
+			<ion-select item-left (ionChange)="fromprice($event)">
+	      <ion-option value="01">Australia</ion-option>
+	      <ion-option value="02">France</ion-option>
+	      <ion-option value="03" selected="true">Germany</ion-option>
+	      <ion-option value="04">China</ion-option>
+	      <ion-option value="05">Russia</ion-option>
+	      <ion-option value="06">Spain</ion-option>
+	      <ion-option value="07">Lebanon</ion-option>
+	      <ion-option value="08">Denmark</ion-option>
+	      <ion-option value="09">Italy</ion-option>
+	      <ion-option value="10">Belgium</ion-option>
+	      <ion-option value="11">Poland</ion-option>
+	      <ion-option value="12">Hungary</ion-option>
+	    </ion-select>
+	  </ion-item>
+	  <ion-item>
+	  	<ion-label item-left>
+	  		Primary Method?
+	  	</ion-label>
+			<ion-toggle item-right [(ngModel)]="isChecked" color="secondary"></ion-toggle>
+		</ion-item>
+		<br>
+		<button>Save</button>
+	</ion-list>
+</ion-content>
