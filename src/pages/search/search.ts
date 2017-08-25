@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams, ModalController } from 'ionic-angular';
-import { NgCalendarModule  } from 'ionic2-calendar';
+/*import { NgCalendarModule  } from 'ionic2-calendar';
 import { CalendarComponent } from 'ionic2-calendar/calendar';
-import { Calendar } from '@ionic-native/calendar';
+import { Calendar } from '@ionic-native/calendar';*/
 import { FormGroup, FormControl } from '@angular/forms';
 
 import { MapPage } from '../map/map';
