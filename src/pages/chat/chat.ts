@@ -20,11 +20,11 @@ export class ChatPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   	this.list =
   	[
-  		{img: 'assets/img/11.png', title: 'John', item_title:'house', history:'2 days ago'},
-  	 	{img: 'assets/img/22.png', title: 'sizza', item_title:'apple', history:'3 days ago'},
-  	 	{img: 'assets/img/33.png', title: 'jonathan', item_title:'nut', history:'4 days ago'},
-  	 	{img: 'assets/img/11.png', title: 'Josh', item_title:'pear', history:'5 days ago'},
-  	 	{img: 'assets/img/11.png', title: 'Joseph', item_title:'TV', history:'2 days ago'}
+  		{img: 'assets/img/11.png', title: 'John', item_title:'house', history:'2 days agao'},
+  	 	{img: 'assets/img/22.png', title: 'sizza', item_title:'apple', history:'3 days agao'},
+  	 	{img: 'assets/img/33.png', title: 'jonathan', item_title:'nut', history:'4 days agao'},
+  	 	{img: 'assets/img/11.png', title: 'Josh', item_title:'pear', history:'5 days agao'},
+  	 	{img: 'assets/img/11.png', title: 'Joseph', item_title:'TV', history:'2 days agao'}
   	]
 
   }

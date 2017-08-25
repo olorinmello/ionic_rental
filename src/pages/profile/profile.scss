@@ -1,7 +1,7 @@
 page-profile {
     .app-content{
         .scroll-content{
-            padding: 10px 8px;
+            padding: 20px 8px;
         }
     }
 // item classes
@@ -52,11 +52,8 @@ page-profile {
 }
 
 .profile-img{
-    width: 20vw;
-    height: 20vw;
-    border-radius: 15vw;
-    align-content: center;
-    align:center;
+    width: 100%;
+    height: 160px;
     object-fit: cover;
     -o-object-fit: cover;
     margin-top: -25px;

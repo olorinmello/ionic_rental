@@ -29,7 +29,7 @@ export class LandingPage {
 
   dolanding(){
 		if (this.phonenumber!='1234') {
-			this.navCtrl.setRoot(Register);
+			this.navCtrl.setRoot(Login);
 		}
 		else {
 			this.navCtrl.setRoot(Register);

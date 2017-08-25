@@ -1,16 +1,12 @@
 // Ionic Variables and Theming. For more info, please see:
-// http://ionicframework.com/docs/theming/
-
-// Font path is used to include ionicons,
-// roboto, and noto sans fonts
+// http://ionicframework.com/docs/v2/theming/
 $font-path: "../assets/fonts";
 
+@import "ionic.globals";
 
-// The app direction is used to include
-// rtl styles in your app. For more info, please see:
-// http://ionicframework.com/docs/theming/rtl-support/
-$app-direction: ltr;
 
+// Shared Variables
+// --------------------------------------------------
 %main-bg{
   background-image: url(../assets/img/bg-head.png) !important;
 }
@@ -32,17 +28,6 @@ $app-direction: ltr;
     text-overflow: ellipsis !important;
     overflow: hidden !important;
 }
-
-@import "ionic.globals";
-
-
-// Shared Variables
-// --------------------------------------------------
-// To customize the look and feel of this app, you can override
-// the Sass variables found in Ionic's source scss files.
-// To view all the possible Ionic variables, see:
-// http://ionicframework.com/docs/theming/overriding-ionic-variables/
-
 
 
 
@@ -78,14 +63,6 @@ $colors: (
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
-
-
-
-
-// App Windows Variables
-// --------------------------------------------------
-// Windows only Sass variables can go here
-
 $background-color: color($colors , dark);
 
 $button-md-height: 3.4rem;
@@ -120,6 +97,11 @@ $item-md-thumbnail-size: 110px;
 $datetime-md-placeholder-color: #000;
 
 
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+
+
 
 
 // App Theme
@@ -135,7 +117,7 @@ $datetime-md-placeholder-color: #000;
 // Ionicons
 // --------------------------------------------------
 // The premium icon font for Ionic. For more info, please see:
-// http://ionicframework.com/docs/ionicons/
+// http://ionicframework.com/docs/v2/ionicons/
 
 @import "ionic.ionicons";
 

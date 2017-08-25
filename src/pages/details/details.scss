@@ -10,14 +10,9 @@ page-details {
     .bar-button-default-md{
         color: color($colors , light);
     }
-    #map {
-        width: 100vw;
-        height: 100vw;
-        position: relative;
-    }
     .content-md{
-/*         background: url(../assets/img/det-bg.png);
- */        @extend %cover;
+        background: url(../assets/img/det-bg.png);
+        @extend %cover;
     }
     .stars{
         p{
@@ -55,13 +50,8 @@ page-details {
 
 .activeColor{
     color: color($colors , secondary) !important;
-/*     background-color: color($colors , light) !important;
- */}
-.icon_size{
-    font-size: 2em;
-    align: center;
-/*     background-color: color($colors , light) !important;
- */}
+    background-color: color($colors , light) !important;
+}
 
 // Head Of Details
 // --------------------------------------------------

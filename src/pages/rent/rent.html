@@ -12,42 +12,7 @@
 
 
 <ion-content class="app-content">
-  <h3 color="darken" class="bold" align="center">Review your rental request</h3>
-  <h5 color="darken" >Requested by</h5>
-  <ion-row>
-    <ion-col col-4 align="center">
-      <img src="{{renter.img}}" [navPush]="otherprofile" style="display: inline-block; height: 15vw; width: 15vw">
-    </ion-col>
-    <ion-col col-8 >
-      <ion-label class="label_top">
-        {{renter.name}}
-      </ion-label>
-      <ion-label class="label_top">
-        {{renter.address}}
-      </ion-label>
-      <ion-label class="label_top">
-        <ion-icon name="md-star"></ion-icon>{{renter.rate}}
-      </ion-label>
-    </ion-col>
-  </ion-row>
-  <h5 color="darken" >Requested for</h5>
-  <ion-col>
-    <ion-label>
-      Item title
-    </ion-label>
-    <ion-label>
-      Dates: from {{Product.selectdate}} to {{Product.selectdate}}
-    </ion-label>
-    <ion-label>
-      Total fee: ${{Product.total_cost}}
-    </ion-label>
-  </ion-col>
-  <ion-item>
-    <button [navPush]="rentreject">Reject</button>
-    <button >Accept</button>
-  </ion-item>
-
-  <!--  <div class="content-bg">
+   <div class="content-bg">
 
      <div class="rent-det" padding>
         <img class="profile-img" src="assets/img/rent-img.png" />
@@ -120,6 +85,6 @@
 
   <ion-fab [navPush]="home" center bottom>
     <button ion-fab mini><ion-icon name="md-checkmark"></ion-icon></button>
-  </ion-fab> -->
+  </ion-fab>
 
 </ion-content>

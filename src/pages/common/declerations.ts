@@ -28,54 +28,36 @@ import { AlertdetailPage } from '../alertdetail/alertdetail';
 import { ChatdetailPage } from '../chatdetail/chatdetail';
 import { SearchPage } from '../search/search';
 import { MapPage } from '../map/map';
-import { SearchresultPage } from '../searchresult/searchresult';
-import { RejectPage } from '../reject/reject';
-import { AcceptPage } from '../accept/accept';
-import { OtherprofilePage } from '../otherprofile/otherprofile';
-import { AddpaymentPage } from '../addpayment/addpayment';
-import { PaypalPage } from '../paypal/paypal';
-import { CreditPage } from '../credit/credit';
-import { EditprofilePage } from '../editprofile/editprofile';
-import { FinishsignPage } from '../finishsign/finishsign';
 
 
 export const allPages = {
-	Login,
-	Register,
-	Home,
-	List,
-	Filter,
-	Details,
-	About,
-	Likes,
-	Profile,
-	Setting,
-	Myrent,
-	RentPage,
-	MapModal,
-	ShareModal,
-	TabPage,
-	MenuPage,
-	AddPage,
-	AlertsPage,
-	ChatPage,
-	SignupPage,
-	ContactPage,
-	PaymentsPage,
-	TcPage,
-	LandingPage,
-	MyitemPage,
-	AlertdetailPage,
-	ChatdetailPage,
-	SearchPage,
-	MapPage,
-	SearchresultPage,
-	RejectPage,
-	AcceptPage,
-	OtherprofilePage,
-	AddpaymentPage,
-	CreditPage,
-	PaypalPage,
-	EditprofilePage,
-	FinishsignPage
+		Login,
+		Register,
+		Home,
+		List,
+		Filter,
+		Details,
+		About,
+		Likes,
+		Profile,
+		Setting,
+		Myrent,
+		RentPage,
+		MapModal,
+		ShareModal,
+		TabPage,
+		MenuPage,
+		AddPage,
+		AlertsPage,
+		ChatPage,
+		SignupPage,
+		ContactPage,
+		PaymentsPage,
+		TcPage,
+		LandingPage,
+		MyitemPage,
+		AlertdetailPage,
+		ChatdetailPage,
+		SearchPage,
+		MapPage
 };
