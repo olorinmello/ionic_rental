@@ -7,7 +7,24 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>chatdetail</ion-title>
+    <ion-row>
+    	<ion-col col-2>
+    		<img src="{{Chatdetail.img}}" [navPush]="details" style="display: inline-block; height: 10vw; width: 10vw">
+    	</ion-col>
+    	<ion-col col-4 style="display: inline-block; height: 10vw; font-size: 4vw;">
+	    	<ion-label style=" margin:0px 4px 1.5vw 0;">
+	    		{{Chatdetail.item_title}}
+	    	</ion-label>
+	    	<ion-label style=" margin:1.5vw 4px 0 4px;">
+	    		${{Chatdetail.price}} per day
+	    	</ion-label>
+	    </ion-col>
+	    <ion-col col-4>
+	    </ion-col>
+	    <ion-col col-2>
+	    	<img [navPush]="profile"  item-right src="{{Chatdetail.ownerimage}}" style="display: inline-block; height: 10vw; width: 10vw">
+	    </ion-col>
+    </ion-row>
   </ion-navbar>
 
 </ion-header>

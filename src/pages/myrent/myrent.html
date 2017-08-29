@@ -4,7 +4,7 @@
   <ion-toolbar>
 
     <ion-segment [(ngModel)]="own_rent"  class="segment_info" color="secondary">
-      <ion-icon style="margin-right: 40px; align-content: left" name="md-heart"></ion-icon>
+      <ion-icon [navPush]="favourites" style="margin-right: 40px; align-content: left" name="md-heart"></ion-icon>
       <ion-segment-button  value="own">
         I Own
       </ion-segment-button>
@@ -55,7 +55,7 @@
       <div  *ngSwitchCase="'rented'">
         <ion-list  *ngFor="let item of own_rentedlist" no-margin>
          <ion-item no-lines no-padding>
-            <ion-thumbnail  item-left>
+            <ion-thumbnail  [navPush]="details" item-left>
               <img src="{{item.img}}" />
               <h2 color="darken" class="bold">{{item.title}}</h2>
             </ion-thumbnail>
@@ -89,7 +89,7 @@
       <div  *ngSwitchCase="'current'">
         <ion-list  *ngFor="let item of rent_currentlist" no-margin>
          <ion-item no-lines no-padding>
-            <ion-thumbnail  item-left>
+            <ion-thumbnail  [navPush]="details" item-left>
               <img src="{{item.img}}" />
               <h2 color="darken" class="bold">{{item.title}}</h2>
             </ion-thumbnail>
@@ -107,7 +107,7 @@
       <div  *ngSwitchCase="'history'">
         <ion-list  *ngFor="let item of rent_historylist" no-margin>
          <ion-item no-lines no-padding>
-            <ion-thumbnail  item-left>
+            <ion-thumbnail [navPush]="details"  item-left>
               <img src="{{item.img}}" />
               <h2 color="darken" class="bold">{{item.title}}</h2>
             </ion-thumbnail>
