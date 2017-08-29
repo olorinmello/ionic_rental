@@ -4,24 +4,22 @@
 
 
 <ion-content padding>
-
  	<div class="Loginpage">
-    <div id="recaptcha-container"></div>
-
 	  <div class="formContainer">
+
       <form class="app-form" padding>
         <ion-list>
           <p>Enter your mobile number</p>
           <ion-item no-padding>
-          	<ion-select [(ngModel)]="countrycode" [ngModelOptions]="{standalone: true}">
-					    <ion-option value="972" selected>+972</ion-option>
-					    <ion-option value="33">+33</ion-option>
-					    <ion-option value="49">+49</ion-option>
-					    <ion-option value="34">+34</ion-option>
-					    <ion-option value="44">+44</ion-option>
-					    <ion-option value="40">+40</ion-option>
+          	<ion-select >
+					    <ion-option selected>+61</ion-option>
+					    <ion-option>+45</ion-option>
+					    <ion-option>+23</ion-option>
+					    <ion-option>+64</ion-option>
+					    <ion-option>+12</ion-option>
+					    <ion-option>+42</ion-option>
   					</ion-select>
-            <ion-input type="number" placeholder="phone number" [(ngModel)]="number" [ngModelOptions]="{standalone: true}"></ion-input>
+            <ion-input type="number" placeholder="number" value="phonenumber"></ion-input>
           </ion-item>
         </ion-list>
         <button ion-button block color="secondary" (click)="dolanding()">Continue</button>
