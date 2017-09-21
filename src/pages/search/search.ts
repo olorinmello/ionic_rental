@@ -23,11 +23,15 @@ import { SearchresultPage } from '../searchresult/searchresult';
 export class SearchPage {
 
 	categorylist:Array<any>;
+  newcategorylist:Array<any>;
 	map=MapModal;
   searchresult=SearchresultPage;
 	datePeriod:any;
   langs:any;
   langForm:any;
+
+  showfromprice: boolean = false;
+  showtoprice: boolean=false;
 
   constructor(public navCtrl: NavController, public modalCtrl: ModalController, public navParams: NavParams) {
   	this.categorylist =
@@ -37,6 +41,15 @@ export class SearchPage {
 			{title: 'category c', icon:'md-compass', number:'40'},
   		{title: 'category D', icon:'md-contrast', number:'40'}
   	]
+
+    this.newcategorylist =
+    [
+      {title: 'category A', icon:'md-color-filter', image:'url(../assets/icon/ico-home_1.png)'
+ ,number:'20', id:'A', value:'apple'},
+      {title: 'category b', icon:'md-color-palette', number:'30' , id:'B', value:'near'},
+      {title: 'category c', icon:'md-compass', number:'40', id:'C', value:'TV'},
+      {title: 'category D', icon:'md-contrast', number:'40', id:'D', value:'car'}
+    ]
 
     this.langForm = new FormGroup({
       "langs": new FormControl({value: 'rust', disabled: false})
@@ -64,5 +77,17 @@ export class SearchPage {
 
   doSubmit(){
 
+  }
+
+  wifiApSelected(){
+
+  }
+
+  showfrom(){
+    this.showfromprice=true;
+  }
+
+  showto(){
+    this.showtoprice=true;
   }
 }

@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, HostBinding, ElementRef,ContentChild,Directive } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+
+import { AddpaymentPage } from '../addpayment/addpayment';
+
 
 /*
   Generated class for the CreditPage page.
@@ -9,9 +12,15 @@ import { NavController, NavParams } from 'ionic-angular';
 */
 @Component({
   selector: 'page-credit',
-  templateUrl: 'credit.html'
+  templateUrl: 'credit.html',
 })
 export class CreditPage {
+
+  public type = 'password';
+  public showPass = false;
+  name: String;
+  cardnumber: String;
+  addpayment=AddpaymentPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
@@ -19,8 +28,38 @@ export class CreditPage {
     console.log('ionViewDidLoad CreditPagePage');
   }
 
+  showPassword() {
+    this.showPass = !this.showPass;
+ 
+    if(this.showPass){
+      this.type = 'text';
+    } else {
+      this.type = 'password';
+    }
+  }
+
   fromprice(){
-  	
+
+  }
+
+  removename(){
+    this.name="";
+  }
+
+  removenumber(){
+    this.cardnumber="";
+  }
+
+  cleardate(){
+
+  }
+
+  save(){
+    
+  }
+
+  toggleShow(){
+
   }
 
 }

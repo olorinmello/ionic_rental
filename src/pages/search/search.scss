@@ -1,4 +1,11 @@
 page-search {
+  :root {
+    --slide-1: url(../assets/icon/ico-home_1.png) ;
+    --slide-2: url(../assets/icon/ico-home_1.png) ;
+    --slide-3: url(../assets/icon/ico-home_1.png) ;
+    --slide-4: url(../assets/icon/ico-home_1.png) ;
+    --slide-5: url(../assets/icon/ico-home_1.png) ;
+  }
 	.radio-wrapper {
     display: inline-flex;
     padding: 0 5px;
@@ -23,6 +30,191 @@ page-search {
       content: "\F122";
     }
 	}
+  ion-app.ios [padding] .scroll-content {
+    padding: 0px;
+  }
+  ion-app.ios [padding], ion-app.ios [padding] .scroll-content {
+    padding: 0 !important;
+  }
+  .content-md{
+      background-color: white;
+  }
+  .scroll-content{
+    background-color: white;
+  }
+  .grid-list{
+    width: 50%;
+    float: left;
+    padding-bottom: 0;
+    padding:0px !important;
+    margin:0px !important;
+    border:0;
+    img{
+        object-fit: cover;
+        -o-object-fit: cover;
+        opacity: .7;
+    }
+    .item-md{
+        .item-inner{
+            padding-right: 0;
+        }
+    }
+    .label-md{
+        text-transform: capitalize;
+        font-weight: 500;
+        padding:0px !important;
+        margin:0px !important;
+    }
+  }
+  .rightposition{
+    right:-1rem;
+  }
+  .wardrobe {
+    z-index: 0;
+    position: relative;
+    padding:0px !important;
+    margin:0px !important;
+  }
+  .cover {
+    z-index: 1;
+    position: absolute;
+    left:23vw;
+    top: 1.8rem;
+    padding:0px !important;
+    margin:0px !important;
+    font-size: 2rem;
+    color: white;
+  }
+  .card-ios{
+    background-color:white;
+    margin: 0px;
+    border-radius: 0px;
+    width: calc(100% - 24px);
+    font-size: 1.4rem;
+    -webkit-box-shadow: 0;
+    box-shadow: 0 0 0;
+    width: calc(47%);
+  }
+  ion-app.ios [padding], ion-app.ios [padding] .scroll-content {
+    padding: 0px;
+  }
+  .headertitle{
+    color: white; 
+    margin:0px;
+  }
+  
+  // category radio button
+  .radio-custom {
+      opacity: 0;
+      position: absolute;
+  }
+
+  .radio-custom, .radio-custom-label {
+      display: inline-block;
+      vertical-align: middle;
+      cursor: pointer;
+  }
+
+  .radio-custom-label {
+      position: relative;
+  }
+
+  .radio-custom + .radio-custom-label:before {
+      content: '';
+      background: #fff;
+      border: 2px solid #ddd;
+      display: inline-block;
+      vertical-align: middle;
+      width: 20px;
+      height: 20px;
+      padding: 2px;
+      color: #e51111;
+      margin-right: 10px;
+      text-align: center;
+  }
+
+
+  .radio-custom + .radio-custom-label:before {
+      border-radius: 50%;
+  }
+  input[type=checkbox].with-font:focus ~ label
+  {
+      color: red;
+  }
+  .radio-custom:checked + .radio-custom-label:before {
+      content: "\f00c";
+      font-family: 'FontAwesome';
+      color: #fff;
+      background-color: #e51111;
+      font-color: #e51111;
+  }
+
+  .radio-custom:focus + .radio-custom-label {
+    outline: 1px solid #ddd; /* focus style */
+  }
+  /* image radio css part 1 */
+  /* input[type="radio"]{
+    display:none;
+  }
+
+  input[type="radio"]
+  {
+    background-image: url(../assets/icon/ico-home_1.png);
+    height: 30px;
+    width: 30px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+    cursor:pointer;
+  }
+
+  input[type="radio"]:checked 
+  {
+    color:red;
+    background-image: url(../assets/icon/ico-home_1.png);
+  } */
+
+  /* visa and paypal radio 
+  .cc-selector input{
+    margin:0;padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+  }
+  .visa{background-image:url(http://i.imgur.com/lXzJ1eB.png);}
+  .mastercard{background-image:url(http://i.imgur.com/SJbRQF7.png);}
+
+  .cc-selector input:active +.drinkcard-cc{opacity: .9;}
+  .cc-selector input:checked +.drinkcard-cc{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+  }
+  .drinkcard-cc{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:100px;height:70px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+       -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+            filter: brightness(1.8) grayscale(1) opacity(.7);
+  }
+  .drinkcard-cc:hover{
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+       -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+            filter: brightness(1.2) grayscale(.5) opacity(.9);
+  }
+  a:visited{color:#888}
+  a{color:#444;text-decoration:none;}
+  p{margin-bottom:.3em;} */
+
+
+}
+.item-ios {
+  background-color:transparent;
 }
 .radio-icon{  visibility: visible!important;}
 .radio-wrapper {

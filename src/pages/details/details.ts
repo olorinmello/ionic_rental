@@ -3,6 +3,7 @@ import { NavController, ModalController, NavParams, Content, ViewController } fr
 import { RentPage } from '../rent/rent';
 import { MapModal } from '../modal-page/modal-page';
 import { ShareModal } from '../share-modal/share-modal';
+import { Home } from '../home/home';
 
 import { Geolocation} from 'ionic-native';
 import { AcceptPage } from '../accept/accept';
@@ -20,12 +21,15 @@ export class Details implements OnInit {
 
   showFooter= false;
   rentPage = RentPage;
+  home=Home;
   private topOrBottom: String;
   private contentBox;
   private tabBarHeight;
   like: any;
   Product: any;
-
+  descriptionstatus: boolean = true;
+  rentalstatus: boolean = false;
+  locationstatus: boolean = false;
   rent=RentPage;
   retrun=AcceptPage;  //return process
 
@@ -34,7 +38,7 @@ export class Details implements OnInit {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public myElement: ElementRef, public modalCtrl: ModalController, public zone:NgZone, public viewCtrl: ViewController)  {
     this.Product ={
-      img: 'assets/img/11.png', ownerimage:'assets/img/profile-img.png', ownername: 'John', item_title:'house', price:'25', description:'this is good rentalable book', selectdate:'', total_cost:'100'}
+      img: 'assets/img/04.png', ownerimage:'assets/img/profile-img.png', ownername: 'John', item_title:'house', price:'25', description:'this is good rentalable book please use this', selectdate:'', total_cost:'100'}
 
     this.ionViewLoaded();
   }
@@ -44,17 +48,7 @@ export class Details implements OnInit {
   }
 
   loadMap(){
-    Geolocation.getCurrentPosition().then((position) => {
-      let latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-      let mapOptions = {
-        center: latLng,
-        zoom: 15,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-      }
-      this.map = new google.maps.Map(this.mapElement.nativeElement, mapOptions);
-    }, (err) => {
-      console.log(err);
-    });
+    
   }
 
   addMarker(){
@@ -128,6 +122,44 @@ export class Details implements OnInit {
 
   ActiveLike(){
     this.like = !this.like;
+  }
+
+  itemSelected(){
+    console.log("hidden");
+    this.descriptionstatus = false;
+  }
+  stopPlayback(){
+    console.log("show");
+    this.descriptionstatus = true
+  }
+
+  rentalhide(){
+    console.log("hidden");
+    this.rentalstatus = false;
+  }
+  rentalshow(){
+    console.log("show");
+    this.rentalstatus = true
+  }
+
+  locationhide(){
+    console.log("hidden");
+    this.locationstatus = false;
+  }
+  locationshow(){
+    console.log("show");
+    this.locationstatus = true
+    Geolocation.getCurrentPosition().then((position) => {
+      let latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+      let mapOptions = {
+        center: latLng,
+        zoom: 15,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      }
+      this.map = new google.maps.Map(this.mapElement.nativeElement, mapOptions);
+    }, (err) => {
+      console.log(err);
+    });
   }
 
 }

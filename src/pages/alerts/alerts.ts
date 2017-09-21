@@ -18,14 +18,17 @@ export class AlertsPage {
 
 	list: Array<any>;
 	alertdetail=AlertdetailPage;
+  alertlist:Array<any>;
+  alert_opportunity:String;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   	this.list =
   	[
-  		{title: 'John', history:'last 24hr', price:'20-30', range: '10 km', duration: 'July 1 - July 10'},
-			{title: 'name 2', history:'last 2day', price:'40-50', range: '20 km', duration: 'July 12 - July 15'},
-			{title: 'name 3', history:'last 24hr', price:'20-30', range: '30 km', duration: 'July 16 - July 20'},
+  		{alertname: 'John', history:'24', startprice:'20',lastprice:'30', distance: '10', startduration: 'July 1', lastduration:'July 10'},
+			{alertname: 'name 2', history:'2', startprice:'40',lastprice:'50', distance: '20', startduration: 'July 6', lastduration:'July 14'},
+			{alertname: 'name 3', history:'24',startprice:'24',lastprice:'32', distance: '30', startduration: 'July 14', lastduration:'July 23'},
   	]
+    this.alert_opportunity="alert";
   }
 
   ionViewDidLoad() {

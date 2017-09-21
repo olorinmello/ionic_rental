@@ -3,6 +3,7 @@ import { NavController, NavParams } from 'ionic-angular';
 import { Home } from '../home/home';
 
 import { SignupPage } from '../signup/signup';
+import { FinishsignPage } from '../finishsign/finishsign';
 
 
 
@@ -12,7 +13,8 @@ import { SignupPage } from '../signup/signup';
 })
 export class Register {
 
-  home = SignupPage;
+  signup = SignupPage;
+  finishsign=FinishsignPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 

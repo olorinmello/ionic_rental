@@ -1,4 +1,7 @@
-.Loginpage{
+page-login{
+  text-align:center;
+  color:white;
+  .Loginpage{
     align-items: center;
     position: absolute;
     width: 100%;
@@ -12,13 +15,53 @@
         align-items: center;
         justify-content: center;
     }
+  }
+
+  .welcometitle{
+    text-align:center;
+    margin-top:30vw;
+    color:white;
+    font-size:3rem;
+    display:inline-block;
+  }
+
+  .loginform{
+    width: 80%;
+    color: white;
+    margin: 11vw auto;
+    padding: 5px;
+  }
+
+  .loginbutton{
+    border-radius: 25px;
+    background-color: #03a9f4;;
+    color: white;
+    width: 100%;
+    margin: auto;
+    display: block;
+    height: 5rem;
+    font-size: 2rem;
+  }
+
+  h4{
+    margin-top:9vw;
+  }
+
+  .list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {
+    border-bottom: 0.55px solid gray;
+  }
 }
 
+.inputborder{
+  color:white;
+}
+
+
 .loginFooter{
-    align-self: flex-end;
-    min-width: 100%;
-    flex: 1;
-    display: flex;
+  align-self: flex-end;
+  min-width: 100%;
+  flex: 1;
+  display: flex;
 }
 .app-form{
     max-width: calc(100% - 32px);
@@ -42,7 +85,7 @@
         }
         &.item-input.input-has-focus{
             .item-inner{
-                border-bottom: .55px solid color($colors , secondary);
+                border-bottom: 0.55px solid gray;
                 box-shadow: inset 0 -1px 0 color($colors , secondary);
             }
         }
@@ -63,7 +106,7 @@
         }
         .item-block{
             .item-inner{
-                border-bottom: 0.55px solid color($colors , secondary);
+                border-bottom: 0.55px solid gray;
             }
         }
     }
@@ -84,7 +127,7 @@
         font-size: 1.4rem;
     }
     .button-md{
-        margin: 4rem .2rem 3rem .2rem;
+        width:100% !important;
     }
 }
 

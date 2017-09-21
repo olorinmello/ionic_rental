@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
+import { PostdetailPage } from '../postdetail/postdetail';
+
+
 /*
   Generated class for the AddPage page.
 
@@ -12,6 +15,8 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'add.html'
 })
 export class AddPage {
+
+	postdetail=PostdetailPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 

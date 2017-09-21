@@ -1,39 +1,96 @@
 page-rent {
-    .app-content{
-        .scroll-content{
-            padding: 20px 8px;
-        }
-        .content-bg{
-            height: 100%;
-            overflow-y: scroll;
-        }
+  .app-content{
+    background-color: white;
+    .scroll-content{
     }
-    h3{
-        margin: 7px 0;
+    .content-bg{
+        height: 100%;
+        overflow-y: scroll;
     }
-    .stars{
-        margin-bottom: 10px;
-    }
-    .select-icon-inner{
-        color: #999 !important;
-    }
-    .item-inner{
-        padding: 0;
-    }
-    .select-text{
-        color: color($colors , darken);
-        font-size: 1.3rem;
-    }
-    .row{
-        margin-bottom: 10px;
-    }
-    ion-fab[bottom]{
-        bottom: 30px;
-    }
+  }
+  h3{
+      margin: 7px 0;
+  }
+  .stars{
+      margin-bottom: 10px;
+  }
+  .select-icon-inner{
+      color: #999 !important;
+  }
+  .item-inner{
+      padding: 0;
+  }
+  .select-text{
+      color: color($colors , darken);
+      font-size: 1.3rem;
+  }
+  .row{
+      margin-bottom: 10px;
+  }
+  ion-fab[bottom]{
+      bottom: 30px;
+  }
+
+  .otherphoto{
+    display: inline-block;
+    height: 12rem;
+    width: 12rem;
+    border-radius: 12rem;
+  }
+
+ .itemphoto{
+    display: inline-block;
+    height: 10rem;
+    width: 10rem;
+  }
+
+  .rentheader{
+    padding-left: 1rem;
+    height:40px;
+    color: white;
+    background-image: url(../assets/icon/navbar.png);
+  }
+
+  .helpicon{
+    background-color: #f55349;
+    margin-left: 1rem;
+    color: white;
+    border-radius: 2rem;
+    width: 2rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .rejectbutton{
+    background-color:#f55349;
+    height: 30px !important;
+  }
+
+  .acceptbutton{
+    height: 30px !important;
+  }
+
+  .rentalreview{
+    font-weight: 500 !important;
+    margin-bottom:30px;
+    margin-top:30px;
+  }
+
+  .requesttitle{
+    color: gray;
+    border-bottom: thin groove;
+    padding-bottom: 11px;
+    padding-top: 5px;
+  }
+}
+
+.graytext{
+  color:gray;
 }
 
 .icon-col{
-    font-size: 1.8rem;
+    font-size: 3vm;
+    color:white;
     ion-icon{
         line-height: 2;
     }

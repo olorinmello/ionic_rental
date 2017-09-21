@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
+import { RentPage } from '../rent/rent';
+
 /*
   Generated class for the OtherprofilePage page.
 
@@ -13,6 +15,8 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class OtherprofilePage {
 
+
+  rent=RentPage;
 	otherprofile:any;
   avaiablelist: Array<any>;
   postlist: Array<any>;
@@ -20,7 +24,7 @@ export class OtherprofilePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   	this.otherprofile = {
-      img: 'assets/img/profile-img.png', name: 'John', address:'Sydney Australia', rate:'4.5', rent_nuber: '10', owner_number: '20'
+      img: 'assets/img/profile-img.png', name: 'John Doe', address:'Sydney Australia', rate:'4.5', rent_nuber: '10', owner_number: '20'
     }
 
     this.avaiablelist =

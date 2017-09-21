@@ -147,3 +147,13 @@ ion-menu{
         }
     }
 }
+
+
+@font-face{
+  font-family: Lato;
+  src: url('../assets/fonts/Lato-Regular.woff2') format('woff2');
+}
+ 
+*{
+  font-family: Lato;
+}

@@ -1,38 +1,81 @@
 
 <ion-header>
 
-   <ion-toolbar>
-
-    <ion-segment [(ngModel)]="own_rent"  class="segment_info" color="secondary">
-      <ion-icon style="margin-right: 20px; align-content: left" name="md-add"></ion-icon>
-      <ion-segment-button  value="own">
-        Alerts
-      </ion-segment-button>
-      <ion-segment-button value="rent">
-        Opportunities
-      </ion-segment-button>
-      <button style="margin-left: 20px;">
-        <ion-icon name="ios-trash" ></ion-icon>
-      </button>
-    </ion-segment>
+  <ion-toolbar color="navbarcolor">
+    <ion-row class="headerheight">
+      <ion-col col-2 >
+        <ion-icon [navPush]="alertdetail" name="md-add"></ion-icon>
+      </ion-col>
+      <ion-col col-9>
+        <ion-segment [(ngModel)]="alert_opportunity"  class="segment_info" >
+          <ion-segment-button class="alerttitle" value="alert">
+            Alerts
+          </ion-segment-button>
+          <ion-segment-button class="alerttitle" value="opportunity">
+            Opportunities
+          </ion-segment-button>
+        </ion-segment>
+      </ion-col>
+       <ion-col col-1>
+        <ion-icon  name="ios-trash-outline"></ion-icon>
+      </ion-col>
+    </ion-row>
   </ion-toolbar>
 
 </ion-header>
 
 
-<ion-content padding>
-	<ion-list *ngFor="let item of list" no-margin>
-		<ion-item [navPush]="details" no-lines no-padding>
-    	<h2 color="darken" class="bold">{{item.title}}</h2>
-    	<div>
-    		<button ion-button  >{{item.history}}</button>
-    		<button ion-button  >{{item.price}}</button>
-    	</div>
-     <div>
-    		<button ion-button  >{{item.range}}</button>
-    		<button ion-button  >{{item.duration}}</button>
-    	</div>
-      <button ion-button color="secondary" [navPush]="alertdetail" item-right ><ion-icon name="ios-arrow-forward-outline"></ion-icon></button>
-    </ion-item>
-	</ion-list>
+<ion-content  style="background-color: white;" [ngSwitch]="alert_opportunity">
+  <ion-card *ngSwitchCase="'alert'" style="background-color: white;" no-margin>
+  	<div>
+      <div *ngFor="let item of list" class="alertstyle">
+        <p class="alertname">Alert Name</p>
+        <div class="grid-list" >
+          <ion-item>
+            <div item-left class="imageblackborder">
+              <img class="categoryimage" src="assets/icon/post-it.png">
+            </div>
+            <div >
+              <p class="helpfont">POSTED WITHIN</p>
+              <p class="blackcolor">Last {{item.history}}hours</p>
+            </div>
+          </ion-item>
+          <ion-item>
+            <div item-left class="imageblackborder">
+              <img class="categoryimage" src="assets/icon/sports-black.png">
+            </div>
+            <div>
+              <p class="helpfont">DISTANCE</p>
+              <p class="blackcolor">{{item.distance}}km</p>
+            </div>
+          </ion-item>
+        </div>
+
+        <div class="grid-list">
+          <ion-item>
+            <div item-left class="imageblackborder">
+              <img class="categoryimage dollar" src="assets/icon/dollar-symbol.png">
+            </div>
+            <div>
+              <p class="helpfont">PRICE RANGE</p>
+              <p class="blackcolor">${{item.startprice}}-${{item.lastprice}}</p>
+            </div>
+          </ion-item>
+          <ion-item>
+            <div item-left class="imageblackborder">
+              <img class="categoryimage" src="assets/icon/calendar.png">
+            </div>
+            <div>
+              <p class="helpfont">DATE RANGE</p>
+              <p class="blackcolor">{{item.startduration}}-{{item.lastduration}}</p>
+            </div>
+        </ion-item>
+        </div>
+        <button class="defaultbutton" [navPush]="alertdetail">VIEW ALERT</button>
+      </div>
+    </div>
+  </ion-card>
+  <ion-card *ngSwitchCase="'opportunity'">
+    <p>opportunities</p>
+  </ion-card>
 </ion-content>

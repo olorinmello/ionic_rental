@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
+import { Profile } from '../profile/profile';
+
+
 /*
   Generated class for the EditprofilePage page.
 
@@ -14,7 +17,7 @@ import { NavController, NavParams } from 'ionic-angular';
 export class EditprofilePage {
 
 	editprofile:any;
-
+  profile=Profile;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   	this.editprofile ={
       img: 'assets/img/profile-img.png', name: 'John Doe', address:'Sydney Australia', rate:'4.5', rent_nuber: '10', owner_number: '20'

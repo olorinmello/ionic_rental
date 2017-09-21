@@ -56,15 +56,18 @@ $app-direction: ltr;
 
 $colors: (
   primary:      #e18804,
+  graytext:     #757575,
+  graylight:    #bdbdbd,
+  dark:         #2e343e,
+  darken:       #000,
+  navbarcolor:  #002b42,
+  backwhite:    #ffffff,
   secondary:    #03a9f4,
   lightprimary: #ffc107,
   danger:       #f53d3d,
   light:        #fbf8fc,
-  none:           transparent,
-  graytext:     #757575,
-  graylight:    #bdbdbd,
-  dark:         #212121,
-  darken:       #000
+  none:         transparent,
+  element:      #f55349
 );
 
 
@@ -100,9 +103,9 @@ $toolbar-md-title-font-size: 1.7rem;
 $searchbar-md-input-background-color: transparent;
 $searchbar-md-input-border-radius: 0px;
 $searchbar-md-input-box-shadow: none;
-$searchbar-md-input-search-icon-color: color($colors , light);
-$searchbar-md-input-placeholder-color: rgba(color($colors , light) , .5);
-$searchbar-md-input-text-color: color($colors , light);
+$searchbar-md-input-search-icon-color: #002b42;
+$searchbar-md-input-placeholder-color: #002b42;
+$searchbar-md-input-text-color: #002b42;
 $searchbar-md-input-search-icon-size: 22px;
 $searchbar-md-input-clear-icon-color: color($colors , light);
 
@@ -145,3 +148,4 @@ $datetime-md-placeholder-color: #000;
 
 @import "roboto";
 @import "noto-sans";
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css);

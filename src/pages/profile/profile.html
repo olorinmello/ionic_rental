@@ -1,7 +1,7 @@
 
-<ion-header [ngClass]="{'expanded': expanded}">
+<!-- <ion-header [ngClass]="{'expanded': expanded}">
 
-  <ion-navbar color="primary" hideBackButton="true">
+  <ion-navbar color="navbarcolor" hideBackButton="true">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
@@ -12,70 +12,79 @@
         <ion-icon [navPush]="editprofile" class="icon_size" name="ios-create"></ion-icon>
       </ion-col>
     </ion-row>
-    
   </ion-navbar>
 
-</ion-header>
+</ion-header> -->
 
-<ion-content class="app-content">
-   <div class="content-bg" padding >
-      <ion-list no-margin>
-        <div align="center"> 
-          <img align="center" class="profile-img" src="{{profile.img}}" />
-          <ion-label class="label_top">
-          {{profile.name}}
-          </ion-label>
-          <ion-label class="label_top">
-            {{profile.address}}
-          </ion-label>
-        </div>
-        <br>
-        <br>
-        <ion-item>
-          <ion-label item-left>
-            Payment Method
-          </ion-label >
-          <button item-right [navPush]="addpayment"><ion-icon name="md-add"></ion-icon></button>
-        </ion-item>
-        <button ion-item>
-          <ion-label>Credit Card</ion-label>
-          <ion-icon name="ios-arrow-forward-outline" item-right ></ion-icon>
-        </button>
-        <button ion-item>
-          <ion-label>PayPal</ion-label>
-          <ion-icon name="ios-arrow-forward-outline" item-right ></ion-icon>
-        </button>
-        <ion-label>
-          More
+<ion-content class="app-content" no-padding>
+  <ion-row class="profileheader">
+    <ion-col col-2>
+      <ion-icon class="whiteicon" [navPush]="home" name="ios-arrow-back-outline"></ion-icon>
+    </ion-col>
+    <ion-col col-8>
+    </ion-col>
+    <ion-col col-2>
+      <ion-icon [navPush]="editprofile" class="whiteicon" name="md-create"></ion-icon>
+    </ion-col>
+  </ion-row>
+  <div no-padding >
+    <ion-list>
+      <div align="center">
+        <img align="center" [navPush]="editprofile" class="profile-img" src="{{profile.img}}" />
+        <ion-label class="label_top font">
+        {{profile.name}}
         </ion-label>
-        <ion-item>
-          <ion-label>About Us</ion-label>
-          <ion-icon name="ios-arrow-forward-outline" item-right ></ion-icon>
-        </ion-item>
-        <ion-item>
-          <ion-label>Terms and Conditions</ion-label>
-          <ion-icon name="ios-arrow-forward-outline" item-right ></ion-icon>
-        </ion-item>
-        <ion-item>
-          <ion-label>Contact Us</ion-label>
-          <ion-icon name="ios-arrow-forward-outline" item-right ></ion-icon>
-        </ion-item>
-        <ion-item>
-          <ion-label>Help and Support</ion-label>
-          <ion-icon name="ios-arrow-forward-outline" item-right ></ion-icon>
-        </ion-item>
-        <ion-item>
-          <ion-label>App Feedback</ion-label>
-          <ion-icon name="ios-arrow-forward-outline" item-right ></ion-icon>
-        </ion-item>
-        <ion-item>
-          <ion-label>Rate App</ion-label>
-          <ion-icon name="ios-arrow-forward-outline" item-right ></ion-icon>
-        </ion-item>
-        <br>
-        <button align="center">Logout</button>
-      </ion-list>
-   </div>
+        <ion-label class="label_top">
+          {{profile.address}}
+        </ion-label>
+      </div>
+      <br>
+      <br>
+      <ion-item class="bottomborder" [navPush]="addpayment">
+        <ion-label class="helpfont">
+          PAYMENT METHODS
+        </ion-label >
+        <ion-icon item-right class="icon_size" name="ios-add-outline"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-label>Credit Card</ion-label>
+        <ion-icon name="ios-arrow-forward-outline"  item-right ></ion-icon>
+      </ion-item>
+      <ion-item class="bottomborder">
+        <ion-label>PayPal</ion-label>
+        <ion-icon name="ios-arrow-forward-outline" item-right ></ion-icon>
+      </ion-item>
+      <ion-label class="helpfont padding">
+        MORE
+      </ion-label>
+      <ion-item class="bottomborder">
+        <ion-label>About Us</ion-label>
+        <ion-icon name="ios-arrow-forward-outline" item-right ></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-label>Terms and Conditions</ion-label>
+        <ion-icon name="ios-arrow-forward-outline" item-right ></ion-icon>
+      </ion-item>
+      <ion-item class="bottomborder">
+        <ion-label>Contact Us</ion-label>
+        <ion-icon name="ios-arrow-forward-outline" item-right ></ion-icon>
+      </ion-item>
+      <ion-item class="bottomborder">
+        <ion-label>Help and Support</ion-label>
+        <ion-icon name="ios-arrow-forward-outline" item-right ></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-label>App Feedback</ion-label>
+        <ion-icon name="ios-arrow-forward-outline" item-right ></ion-icon>
+      </ion-item>
+      <ion-item class="bottomborder">
+        <ion-label>Rate App</ion-label>
+        <ion-icon name="ios-arrow-forward-outline" item-right ></ion-icon>
+      </ion-item>
+      <br>
+      <button ion-button block class="savebutton" [navPush]="searchresult">LOGOUT</button>
+    </ion-list>
+ </div>
  <!--   <div class="content-bg" padding>
       <img class="profile-img" src="{{profile.img}}" />
       <ion-list no-margin>

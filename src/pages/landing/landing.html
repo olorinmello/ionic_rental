@@ -1,28 +1,28 @@
-<ion-header [ngClass]="{'expanded': expanded}">
-  <ion-navbar color="primary"></ion-navbar>
-</ion-header>
 
 
-<ion-content padding>
- 	<div class="Loginpage">
+
+<ion-content class="appcontent">
+
+ 	<div class="Landingpage">
+    <div id="recaptcha-container"></div>
+    <p class="apptitle">RENTABLE</p>
 	  <div class="formContainer">
-
-      <form class="app-form" padding>
-        <ion-list>
-          <p>Enter your mobile number</p>
-          <ion-item no-padding>
-          	<ion-select >
-					    <ion-option selected>+61</ion-option>
-					    <ion-option>+45</ion-option>
-					    <ion-option>+23</ion-option>
-					    <ion-option>+64</ion-option>
-					    <ion-option>+12</ion-option>
-					    <ion-option>+42</ion-option>
+      <form class="landingform">
+        <ion-list >
+          <p class="helpstring">ENTER YOUR MOBILE NUMBER</p>
+          <ion-item no-padding style="border: 0px;">
+          	<ion-select (ionChange)="selectcode($event)" class="grayborder">
+					    <ion-option value="972" selected>+61</ion-option>
+					    <ion-option value="33">+32</ion-option>
+					    <ion-option value="49">+49</ion-option>
+					    <ion-option value="34">+34</ion-option>
+					    <ion-option value="44">+44</ion-option>
+					    <ion-option value="40">+40</ion-option>
   					</ion-select>
-            <ion-input type="number" placeholder="number" value="phonenumber"></ion-input>
+            <ion-input type="number" [(ngModel)]="number" [ngModelOptions]="{standalone: true}" class="phoncode"></ion-input>
           </ion-item>
         </ion-list>
-        <button ion-button block color="secondary" (click)="dolanding()">Continue</button>
+        <button ion-button class="continubutton" (click)="dolanding()">CONTINUE</button>
       </form>
 	  </div>
   </div>

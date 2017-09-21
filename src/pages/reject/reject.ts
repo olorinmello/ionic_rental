@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
+import { RentPage } from '../rent/rent';
+
 /*
   Generated class for the RejectPage page.
 
@@ -13,12 +15,22 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class RejectPage {
 
+  rent=RentPage;
+  isremove:boolean;
 	tracks: Array<{name: string, isChecked: boolean}> = [];
+  rejectreason:Array<any>;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.isremove=false;
+    this.rejectreason = [{reason: 'Item is broken', icon: 'ios-bug-outline'}, {reason: 'I am away', icon: 'ios-plane-outline'}, {reason: 'Item is broken', icon: 'ios-plane-outline'}, {reason: 'I am away', icon: 'ios-plane-outline'}, {reason: 'I am away', icon: 'ios-plane-outline'}, {reason: 'I am away', icon: 'ios-plane-outline'}]
+  }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad RejectPagePage');
+  }
+
+  toggle(){
+
   }
 
 }

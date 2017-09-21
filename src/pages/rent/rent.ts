@@ -5,7 +5,7 @@ import { Home } from '../home/home';
 import { RejectPage } from '../reject/reject';
 import { AcceptPage } from '../accept/accept';
 import { OtherprofilePage } from '../otherprofile/otherprofile';
-
+import { Details } from '../details/details';
 
 @Component({
   selector: 'page-rent',
@@ -16,7 +16,8 @@ export class RentPage {
   home = Home;
   rentreject=RejectPage;
   otherprofile=OtherprofilePage;
-  
+  detail=Details;
+
   Product: any;
   renter:any;
 

@@ -15,9 +15,11 @@ export class Login {
   expanded: Boolean;
   register = Register ;
   home = MenuPage;
+  name:String;
 
   constructor(public navCtrl: NavController, public alertCtrl: AlertController) {
     this.expanded = true;
+    this.name="Matias";
   }
 
   forgotPassword() {

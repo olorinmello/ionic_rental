@@ -1,20 +1,15 @@
-<ion-header >
-  <p>Login Page</p>
-</ion-header>
+<ion-content padding class="appcontent">
 
-
-<ion-content padding>
-
-  <p>Welcome back John</p>
-  <form class="app-form" padding>
-    <ion-list>
-      <p>Enter your password</p>
+  <p class="welcometitle">Welcome back {{name}}</p>
+  <form  class="loginform">
+    <ion-list >
+      <p class="helpstring">ENTER YOUR PASSWORD</p>
       <ion-item no-padding>
-        <ion-input type="password" placeholder="password"></ion-input>
+        <ion-input type="password" class="inputborder" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;"></ion-input>
       </ion-item>
     </ion-list>
-    <button ion-button block color="secondary" [navPush]="home">Login</button>
-    <h4 color="light" text-center (click)="forgotPassword()">forgot password</h4>
+    <button ion-button class="loginbutton" style="width: 100%;" [navPush]="home">LOGIN</button>
+    <p text-center (click)="forgotPassword()">forgot password</p>
 
   </form>
 </ion-content>

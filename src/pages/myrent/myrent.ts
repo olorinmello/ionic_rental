@@ -20,6 +20,7 @@ export class Myrent {
   own_rent:string="own";
   date:string="current";
   isavailable:string="available";
+  showdeleteicon:boolean;
 
   favourites=Likes;
   details=Details;
@@ -28,6 +29,7 @@ export class Myrent {
 
     this.list=[{img: 'assets/img/11.png', title: 'Stylish house'}, {img: 'assets/img/22.png', title: 'Big Houses'}, {img: 'assets/img/33.png', title: 'Big Houses'}, {img: 'assets/img/11.png', title: 'Stylish house'},{img: 'assets/img/11.png', title: 'Stylish house'}, {img: 'assets/img/22.png', title: 'Big Houses'}, {img: 'assets/img/33.png', title: 'Big Houses'}, {img: 'assets/img/11.png', title: 'Stylish house'}]
 
+    this.showdeleteicon=true;
 
     this.own_avaiablelist =
     [
@@ -39,9 +41,9 @@ export class Myrent {
 
     this.own_rentedlist =
     [
-      {img: 'assets/img/11.png', title: 'apartment', profileimage:'assets/img/profile-img.png', profilename:'John', delete:'yes', },
-      {img: 'assets/img/22.png', title: 'wedding', profileimage:'assets/img/profile-img.png', profilename:'rascal', delete:'yes', },
-      {img: 'assets/img/33.png', title: 'shop', profileimage:'assets/img/profile-img.png', profilename:'sizza', delete:'yes', }
+      {img: 'assets/img/11.png', title: 'apartment', profileimage:'assets/img/profile-img.png', profilename:'John', delete:'yes', rentday:'5'},
+      {img: 'assets/img/22.png', title: 'wedding', profileimage:'assets/img/profile-img.png', profilename:'rascal', delete:'yes',  rentday:'2'},
+      {img: 'assets/img/33.png', title: 'shop', profileimage:'assets/img/profile-img.png', profilename:'sizza', delete:'yes', rentday:'3' }
     ]
 
     this.rent_currentlist =
@@ -69,4 +71,7 @@ export class Myrent {
     }
   }*/
 
+  showdelete(){
+    this.showdeleteicon=!this.showdeleteicon;
+  }
 }

@@ -37,6 +37,11 @@ import { PaypalPage } from '../paypal/paypal';
 import { CreditPage } from '../credit/credit';
 import { EditprofilePage } from '../editprofile/editprofile';
 import { FinishsignPage } from '../finishsign/finishsign';
+import { PostcostPage } from '../postcost/postcost';
+import { PostdetailPage } from '../postdetail/postdetail';
+
+
+import { AuthenticateProvider } from '../../providers/authenticate/authenticate';
 
 
 export const allPages = {
@@ -77,5 +82,7 @@ export const allPages = {
 	CreditPage,
 	PaypalPage,
 	EditprofilePage,
-	FinishsignPage
+	FinishsignPage,
+	PostcostPage,
+	PostdetailPage
 };

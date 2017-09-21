@@ -3,6 +3,7 @@ import { NavController, NavParams } from 'ionic-angular';
 
 import { PaypalPage } from '../paypal/paypal';
 import { CreditPage } from '../credit/credit';
+import { Profile } from '../profile/profile';
 
 /*
   Generated class for the AddpaymentPage page.
@@ -18,6 +19,7 @@ export class AddpaymentPage {
 
 	credit=CreditPage;
 	paypal=PaypalPage;
+  profile=Profile;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
