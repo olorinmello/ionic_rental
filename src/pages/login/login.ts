@@ -22,6 +22,10 @@ export class Login {
     this.name="Matias";
   }
 
+  login(){
+    this.navCtrl.setRoot(MenuPage);
+  }
+
   forgotPassword() {
     let prompt = this.alertCtrl.create({
       title: 'Forgot Password',

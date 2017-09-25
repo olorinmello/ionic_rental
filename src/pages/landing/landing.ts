@@ -99,7 +99,7 @@ export class LandingPage {
     this.user = {
       number: this.number
     }
-    this.navCtrl.setRoot(Register);
+    this.navCtrl.setRoot(Login);
 		/*this.Authprovider.authenticate(this.user).then(data =>{
       if (data) {
         this.navCtrl.setRoot(Login);

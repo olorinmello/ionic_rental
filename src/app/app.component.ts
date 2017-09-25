@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
-import { StatusBar } from '@ionic-native/status-bar';
+import { StatusBar  } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { AngularFireAuth } from 'angularfire2/auth';
-
+import { Keyboard } from 'ionic-native';
 
 //import { TabsPage } from '../pages/tabs/tabs';
 import { LandingPage } from '../pages/landing/landing';
@@ -27,12 +27,22 @@ export class MyApp {
       // page for auth. users
       this.rootPage = LandingPage
     });
+    window.addEventListener('native.keyboardshow', keyboardShowHandler);
+
+    
+
+    function keyboardShowHandler(e){
+      alert('Keyboard height is: ' + e.keyboardHeight);
+      this.keyboard.show();
+    }
 
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
       splashScreen.hide();
+
+      Keyboard.hideKeyboardAccessoryBar(false);
     });
   }
 }

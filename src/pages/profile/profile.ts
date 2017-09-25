@@ -5,6 +5,8 @@ import { Keyboard } from 'ionic-native';
 import { AddpaymentPage } from '../addpayment/addpayment';
 import { EditprofilePage } from '../editprofile/editprofile';
 import { Home } from '../home/home';
+import { About } from '../about/about';
+import { FeedbackPage } from '../feedback/feedback';
 
 
 @Component({
@@ -17,6 +19,8 @@ export class Profile {
   editprofile=EditprofilePage;
   profile:any;
   home=Home;
+  about=About;
+  feedback=FeedbackPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.profile ={

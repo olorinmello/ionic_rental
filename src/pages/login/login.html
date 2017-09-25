@@ -5,10 +5,10 @@
     <ion-list >
       <p class="helpstring">ENTER YOUR PASSWORD</p>
       <ion-item no-padding>
-        <ion-input type="password" class="inputborder" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;"></ion-input>
+        <ion-input type="password" class="inputborder" ></ion-input>
       </ion-item>
     </ion-list>
-    <button ion-button class="loginbutton" style="width: 100%;" [navPush]="home">LOGIN</button>
+    <button ion-button class="loginbutton" style="width: 100%;" (click)="login()">LOGIN</button>
     <p text-center (click)="forgotPassword()">forgot password</p>
 
   </form>

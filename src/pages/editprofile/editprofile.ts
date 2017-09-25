@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component,Renderer, ElementRef } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
-import { Profile } from '../profile/profile';
+import { KeyboardDirective } from '../../directives/keyboard/keyboard';
 
+import { Profile } from '../profile/profile';
 
 /*
   Generated class for the EditprofilePage page.
@@ -24,8 +25,17 @@ export class EditprofilePage {
     }
   }
 
+ 
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad EditprofilePagePage');
+
+  }
+
+
+  onFocus(){
+    console.log('ionViewDidLoad EditprofilePagePage');
+    
   }
 
 }

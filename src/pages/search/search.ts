@@ -6,6 +6,7 @@ import { Calendar } from '@ionic-native/calendar';*/
 import { FormGroup, FormControl } from '@angular/forms';
 
 import { MapPage } from '../map/map';
+import { Home } from '../home/home';
 import { MapModal } from '../modal-page/modal-page';
 import { SearchresultPage } from '../searchresult/searchresult';
 
@@ -21,6 +22,8 @@ import { SearchresultPage } from '../searchresult/searchresult';
   templateUrl: 'search.html'
 })
 export class SearchPage {
+
+  home=Home;
 
 	categorylist:Array<any>;
   newcategorylist:Array<any>;

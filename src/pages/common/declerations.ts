@@ -39,6 +39,7 @@ import { EditprofilePage } from '../editprofile/editprofile';
 import { FinishsignPage } from '../finishsign/finishsign';
 import { PostcostPage } from '../postcost/postcost';
 import { PostdetailPage } from '../postdetail/postdetail';
+import { FeedbackPage } from '../feedback/feedback';
 
 
 import { AuthenticateProvider } from '../../providers/authenticate/authenticate';
@@ -84,5 +85,6 @@ export const allPages = {
 	EditprofilePage,
 	FinishsignPage,
 	PostcostPage,
-	PostdetailPage
+	PostdetailPage,
+	FeedbackPage
 };
