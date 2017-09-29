@@ -32,7 +32,7 @@ export class MyApp {
     
 
     function keyboardShowHandler(e){
-      alert('Keyboard height is: ' + e.keyboardHeight);
+      console.log('Keyboard height is: ' + e.keyboardHeight);
       this.keyboard.show();
     }
 
