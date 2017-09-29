@@ -20,7 +20,7 @@
   	Why are you rejecting?
   </ion-label>
 	<ion-card class="grid-list" *ngFor="let item of rejectreason">
-		<ion-icon name="{{item.icon}}" style="color: red;"></ion-icon>
+		<ion-icon class="rejectimage" name="{{item.icon}}"></ion-icon>
     {{item.reason}}
   </ion-card>
 	<br>
@@ -30,5 +30,5 @@
 		</ion-label>
 		 <ion-checkbox [(ngModel)]="isremove" item-right></ion-checkbox>
 	</ion-item>
-	 <button ion-button block color="secondary" class="defaultbutton" [navPush]="searchresult">LOGOUT</button>
+	 <button ion-button block class="defaultbutton buttonstyle" [navPush]="searchresult">LOGOUT</button>
 </ion-content>

@@ -4,9 +4,7 @@ page-profile {
     .scroll-content{
     }
   }
-  .bottomborder{
-    border-bottom: 0.5px groove;
-  }
+
   ion-item{
     ion-icon{
       color: grey;
@@ -73,20 +71,31 @@ page-profile {
     opacity: 1;
   }
 
-  
   .label_top.font{
     font-size:2rem;
     font-weight:bold;
   }
 
+  .bottomborder.subtitle{
+    margin-top: 35px;
+  }
+
+  .bottomborder.subpadding{
+    margin-top: 7px;
+    margin-bottom:7px;
+    padding-left:10px;
+  }
+
   .helpfont{
     color:black;
-    font-size:1.5rem;
-    font-weight:bold;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 35px;
+    padding-left: 12px;
   }
 
   .helpfont.padding{
-    padding-left: 16px;
+    padding-bottom:15px;
   }
 
   .ion-ios-addpay-outline,

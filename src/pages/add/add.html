@@ -10,7 +10,7 @@
       </ion-col>
       <ion-col col-3 class="nextbutton">
       	<ion-label [navPush]="postdetail">
-      		Next
+      		NEXT
       	</ion-label>
       </ion-col>
     </ion-row>
@@ -19,12 +19,49 @@
 </ion-header>
 
 
-<ion-content no-padding>
-	<ion-card  no-margin>
+<ion-content no-padding class="postcontent">
+  <div class="postitemdiv">
+    <ion-row>
+      <ion-col col-3>
+      </ion-col>
+      <ion-col col-2 >
+        <div class="logoborder">
+          <img class="logoimage"  src="assets/icon/photocamera_white.png">
+        </div>
+        <ion-label class="posttitle">
+          Photos
+        </ion-label>
+      </ion-col>
+      <ion-col [navPush]="signup" col-2>
+        <div class="logoblackborder">
+          <img class="logoimage" src="assets/icon/postdetail_black.png">
+        </div>
+        <ion-label class="posttitle graycolor">
+          Details
+        </ion-label>
+      </ion-col>
+      <ion-col [navPush]="finishsign" col-2>
+        <div class="logoblackborder">
+          <img class="logoimage dollar" src="assets/icon/dollar-symbol.png">
+        </div>
+        <ion-label class="posttitle graycolor">
+          Costs
+        </ion-label>
+      </ion-col>
+      <ion-col col-3>
+      </ion-col>
+    </ion-row>
+  </div>
+  <ion-card class="grid-list" *ngFor="let item of categorygrid, let i = $index">
+    <div class="image-item" no-lines>
+      <img [navPush]="details" class="imageborder" style="background-color: white" src="{{item.img}}" />
+    </div>
+  </ion-card>
+	<!-- <ion-card  no-margin>
     <ion-row class="titleimage" >
     	<img src="assets/icon/posttitle.png">
     </ion-row>
-    <!-- <ion-card-content [ngSwitch]="isavailable" style="color: white;">
+    <ion-card-content [ngSwitch]="isavailable" style="color: white;">
       <div  *ngSwitchCase="'available'" style="color: white;">
         <ion-card class="grid-list" *ngFor="let item of own_avaiablelist">
           <div class="image-item" no-lines>
@@ -50,6 +87,6 @@
           </div>
         </ion-card>
       </div>
-    </ion-card-content> -->
-  </ion-card>
+    </ion-card-content>
+  </ion-card> -->
 </ion-content>

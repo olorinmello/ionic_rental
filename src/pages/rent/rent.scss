@@ -27,14 +27,15 @@ page-rent {
   .row{
       margin-bottom: 10px;
   }
+
   ion-fab[bottom]{
       bottom: 30px;
   }
 
   .otherphoto{
     display: inline-block;
-    height: 12rem;
-    width: 12rem;
+    height: 11.5rem;
+    width: 11.5rem;
     border-radius: 12rem;
   }
 
@@ -63,29 +64,35 @@ page-rent {
 
   .rejectbutton{
     background-color:#f55349;
-    height: 30px !important;
+    height: 50px !important;
   }
 
   .acceptbutton{
-    height: 30px !important;
+    height: 50px !important;
   }
 
   .rentalreview{
-    font-weight: 500 !important;
+    font-weight: 600 !important;
     margin-bottom:30px;
     margin-top:30px;
   }
 
   .requesttitle{
     color: gray;
-    border-bottom: thin groove;
-    padding-bottom: 11px;
-    padding-top: 5px;
+    border-bottom: thin solid gainsboro;
+    padding-bottom: 13px;
+    font-size: 11px;
+    padding-top: 11px;
+  }
+
+  .itemtext{
+    font-size: 19px;
   }
 }
 
 .graytext{
   color:gray;
+  font-size:18px;
 }
 
 .icon-col{

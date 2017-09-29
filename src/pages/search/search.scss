@@ -6,30 +6,7 @@ page-search {
     --slide-4: url(../assets/icon/ico-home_1.png) ;
     --slide-5: url(../assets/icon/ico-home_1.png) ;
   }
-	/* .radio-wrapper {
-    display: inline-flex;
-    padding: 0 5px;
-    .item-radio {
-        border: medium none;
-        width: 24px;
-        .radio-icon {
-          padding: 0;
-        }
-        .radio-icon:before{
-            content: "";
-            border:1px solid black;
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            overflow:hidden;
-        }
-    }
-    .item-radio input:checked + .radio-content .radio-icon:before{
-      color: #fff;
-      background-color: blue;
-      content: "\F122";
-    }
-	} */
+
   ion-app.ios [padding] .scroll-content {
     padding: 0px;
   }
@@ -95,7 +72,7 @@ page-search {
     padding: 0px;
   }
   .headertitle{
-    color: white; 
+    color: white;
     margin:0px;
   }
 
@@ -109,7 +86,6 @@ page-search {
     height: 3rem;
     width: 30vw;
   }
-
 
   .radio-custom + .radio-custom-label:before {
       border-radius: 50%;
@@ -131,50 +107,6 @@ page-search {
 
   .radio-custom:focus + .radio-custom-label {
     outline: 1px solid #ddd; /* focus style */
-  }
-
-  .input-hidden {
-    position: absolute;
-    left: -9999px;
-  }
-
-  .categoryimage{
-    margin-left: 2px;
-    margin-top: auto;
-    height: 17px;
-    width: auto;
-  }
-
-  .radio-img {
-    margin: 13px 0;
-    input[type=radio] {
-      & + label {
-        & > .img-container {
-          display: inline-block;
-          margin: 0 0;
-          padding: 5px;
-          width:30px;
-          height:30px;
-          border: 1px solid black;
-          border-radius: 50%;
-          vertical-align: middle;
-        }
-      }
-
-      &:checked {
-        color: #f55349;
-        & + label {
-          color: #f55349;
-
-          & > .img-container {
-            background-color: #f55349;
-            color:white;
-            width:30px;
-            height:30px;
-          }
-        }
-      }
-    }
   }
 
   .distancesize{
@@ -216,3 +148,47 @@ page-search {
     content: "\F122";
   }
 }
+
+ .radio-img {
+    margin: 25px 0;
+    input[type=radio] {
+      & + label {
+        & > .img-container {
+          display: inline-block;
+          margin: 0 0;
+          padding: 5px;
+          width:30px;
+          height:30px;
+          border: 1px solid black;
+          border-radius: 50%;
+          vertical-align: middle;
+        }
+      }
+
+      &:checked {
+        color: #f55349;
+        & + label {
+          color: #f55349;
+
+          & > .img-container {
+            background-color: #f55349;
+            color:white;
+            width:30px;
+            height:30px;
+          }
+        }
+      }
+    }
+  }
+
+  .input-hidden {
+    position: absolute;
+    left: -9999px;
+  }
+
+  .categoryimage{
+    margin-left: 2px;
+    margin-top: auto;
+    height: 17px;
+    width: auto;
+  }

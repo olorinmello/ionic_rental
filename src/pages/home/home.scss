@@ -10,6 +10,14 @@ page-home {
     }
   }
 
+  .image-item{
+    position: relative;
+    display: inline-block;
+    padding:0px !important;
+    margin:0px !important;
+    border:0px;
+  }
+
   .wardrobe {
     z-index: 0;
     position: relative;
@@ -18,13 +26,7 @@ page-home {
     padding:0px !important;
     margin:0px !important;
   }
-  .image-item{
-    position: relative;
-    display: inline-block;
-    padding:0px !important;
-    margin:0px !important;
-    border:0px;
-  }
+
   .cover_1 {
     z-index: 1;
     position: absolute;
@@ -42,18 +44,20 @@ page-home {
     top: 1vw;
     padding:0px !important;
     margin:0px !important;
-    font-size: 1.8rem;
+    font-size: 31px;
     color: white;
+    font-weight: 100;
   }
-  .category_size {
-    font-size: 3.2rem;
-    color:light;
+
+  ion-scroll .scroll-content{
+    padding: 6px 0;
   }
+
   .categorystyle{
     overflow: scroll;
     white-space: nowrap;
     color: gray;
-    height: 50px;
+    height: 60px;
     border-bottom: thin groove white;
     border-top: thin groove white;
     font-size: 1.2rem;
@@ -95,7 +99,13 @@ page-home {
 
   .activeColor{
     color: color($colors , secondary) !important;
+    background-color:white;
   }
+}
+
+.categoryimg {
+  font-size: 2.5rem;
+  margin-top: 4px;
 }
 
 .item-ios.item-block .item-inner{
@@ -135,9 +145,18 @@ page-home {
 }
 
 .halfbutton{
-  left:17vw;
-  width: 30vw;
+  left: 10vw;
+  width: 40vw;
   height: 20px;
   text-align: center;
-  border-radius:22px;
+  border-radius: 25px;
+}
+
+.starsize{
+  height:18px;
+  width:auto;
+}
+
+.bottomborder{
+  border-bottom: thin solid gainsboro;
 }

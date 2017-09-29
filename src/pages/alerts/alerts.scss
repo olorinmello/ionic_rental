@@ -105,6 +105,7 @@ page-alerts {
   	color: black;
     font-size: 2rem;
     padding-top: 15px;
+    font-weight:600;
     padding-bottom: 4px;
   }
 
@@ -115,23 +116,25 @@ page-alerts {
     margin-right: 8px;
   }
 
+  .categoryimage{
+    margin: 7px 0 0 5px;
+    height: 17px;
+    width: auto;
+  }
+  .categoryimage.dollar{
+    margin:7px 0 0 10px
+  }
+
 }
 
 .helpfont{
   font-size: 1rem;
 }
 
-.categoryimage{
-  margin: 7px 0 0 5px;
-  height: 19px;
-  width: auto;
-}
-.categoryimage.dollar{
-  margin:7px 0 0 10px
-}
+
 
 .imageblackborder{
-  border:1px solid black;
+  border:1px solid gainsboro;
   border-radius: 50%;
   width: 35px;
   height:35px;

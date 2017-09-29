@@ -7,18 +7,25 @@
 <ion-header>
 
   <ion-navbar color="navbarcolor">
-   
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding align="center">
-	<br>
-	<h3 center>
+<ion-content padding align="center" class="addcontent">
+	<p class="returntitle">
 		Returning your Item
-	</h3><br>
-	<p>Is the production in same condition as it was when rented?</p>
+	</p>
+	<P class="helptext suggest">We suggest you and the owner agree on the condition of the item being returned before completing the below</P>
+	<p class="helptext condition">IS THE ITEM IN THE SAME CONDITIONS AS WHEN YOU RENTED IT?</p>
+	<ion-label >
+    <img class="returnstarsize" src="assets/icon/star-red.png">
+    <img class="returnstarsize" src="assets/icon/star-red.png">
+    <img class="returnstarsize" src="assets/icon/star-red.png">
+    <img class="returnstarsize" src="assets/icon/star-red.png">
+    <img class="returnstarsize" src="assets/icon/star.png">
+  </ion-label>
+  <p class="goodstyle">VERY GOOD</p>
 	<ion-row >
 		<ion-col col-3 >
 			Yes
@@ -33,14 +40,9 @@
 			<ion-toggle  [(ngModel)]="!yes" color="secondary"></ion-toggle>
 		</ion-col>
 	</ion-row>
-	<ion-item no-lines>
-		<ion-label >
-			Select the items conditions{{saturation}}
-		</ion-label>
-    <ion-range min="0" max="1000" [(ngModel)]="saturation" step="100"color="secondary">
-      <ion-icon small range-left name="ios-close"></ion-icon>
-			<ion-icon range-right name="ios-checkmark"></ion-icon>
-    </ion-range>
-  </ion-item><br>
-  <button ion-button>Submit</button>
+	<ion-label class="commentstyle">
+		LEAVE A COMMENT BELOW
+	</ion-label>
+	<ion-textarea rows="5" type="text" class="feedbackinput" text-wrap></ion-textarea >
+  <button ion-button block color="secondary" class="defaultbutton" >SUBMIT</button>
 </ion-content>
