@@ -33,6 +33,9 @@ export class Details implements OnInit {
   rent=RentPage;
   retrun=AcceptPage;  //return process
 
+  goodcondition:number[] = [1, 2, 3];
+  badcondition:number[] = [1, 2];
+
   @ViewChild('map') mapElement: ElementRef;
   map: any;
 
@@ -74,10 +77,11 @@ export class Details implements OnInit {
     this.toggle_footer(false);
   }
   toggle_footer(show){
+    console.log('toggling');
     if(show){
     document.querySelector(".detFooter")['style'].display = 'block';
-    document.querySelector("page-details .scroll-content")['style'].marginBottom = '50px';
-    document.querySelector("page-details .fixed-content")['style'].marginBottom = '50px';
+    document.querySelector("page-details .scroll-content")['style'].marginBottom = 0;
+    document.querySelector("page-details .fixed-content")['style'].marginBottom = 0;
     this.zone.run(()=>{
       this.showFooter = true;
     })

@@ -23,7 +23,7 @@ import { ContactPage } from '../contact/contact';
 import { PaymentsPage } from '../payments/payments';
 import { TcPage } from '../tc/tc';
 import { LandingPage } from '../landing/landing';
-import { MyitemPage } from '../myitem/myitem';
+import { MyStats } from '../myitem/myitem';
 import { AlertdetailPage } from '../alertdetail/alertdetail';
 import { ChatdetailPage } from '../chatdetail/chatdetail';
 import { SearchPage } from '../search/search';
@@ -70,7 +70,7 @@ export const allPages = {
 	PaymentsPage,
 	TcPage,
 	LandingPage,
-	MyitemPage,
+	MyStats,
 	AlertdetailPage,
 	ChatdetailPage,
 	SearchPage,

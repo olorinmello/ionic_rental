@@ -29,10 +29,7 @@ export class MyApp {
     });
     window.addEventListener('native.keyboardshow', keyboardShowHandler);
 
-    
-
     function keyboardShowHandler(e){
-      console.log('Keyboard height is: ' + e.keyboardHeight);
       this.keyboard.show();
     }
 

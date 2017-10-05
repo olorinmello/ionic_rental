@@ -2,6 +2,8 @@ page-alerts {
 	.segment_info{
     column-width: 80vw;
     width: 100% !important;
+    padding:0;
+    margin:0;
   }
   .more-det{
     .label-md{
@@ -122,7 +124,7 @@ page-alerts {
     width: auto;
   }
   .categoryimage.dollar{
-    margin:7px 0 0 10px
+    margin:7px 0 0 11px
   }
 
 }

@@ -28,7 +28,7 @@
     </ion-slide>
   </ion-slides> -->
   <div style="z-index: 0; position: relative;">
-    <img src="{{Product.img}}" style="display: inline-block; height: 50vh; width: 100vw">
+    <img src="{{Product.img}}" class="my-overlay" >
     <ion-icon name="ios-arrow-back" class="cover_header0" [navPush]="home"></ion-icon>
     <ion-icon name="shareicon" class="cover_header1"></ion-icon>
     <ion-icon name="ios-heart-outline" class="cover_header2" (click)="ActiveLike()" [ngClass]="{'activeColor':like}"></ion-icon>
@@ -57,8 +57,17 @@
   </ion-row>
   <div style="padding-bottom: 5rem;" padding>
     <h4 >
-      Pretty Cool Size
+      Pretty Cool Size 9 shoes
     </h4>
+    <div style="opacity: 0.7;">
+      <div *ngFor="let i of goodcondition" class="conditionstar">
+        <img class="starsize" src="assets/icon/star-red.png">
+      </div>
+      <div *ngFor="let i of badcondition" class="conditionstar" >
+        <img class="starsize" src="assets/icon/star.png">
+      </div>
+      Item Condition = GOOD
+    </div>
     <ion-row>
       <ion-col col-4>
         <ion-label>

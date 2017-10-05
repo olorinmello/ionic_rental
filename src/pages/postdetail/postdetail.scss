@@ -1,14 +1,4 @@
 page-postdetail {
-	.app-content{
-    background-color: white;
-    color:black;
-    .scroll-content{
-    }
-    .content-bg{
-        height: 100%;
-        overflow-y: scroll;
-    }
-  }
 
   .detailscreen{
   	padding:3vw;
@@ -127,12 +117,7 @@ page-postdetail {
     outline: 1px solid #ddd; /* focus style
   } */
 
-  .conditionstar{
-  	color:red;
-  	display: inline-block;
-  	font-size:2rem;
-  	text-align: left;
-  }
+  
 
   .card-ios {
     margin: 0 0 25px 0;;
@@ -143,4 +128,10 @@ page-postdetail {
     width: calc(50%);
 	}
 	//radio category
+}
+.conditionstar{
+  color:red;
+  display: inline-block;
+  font-size:2rem;
+  text-align: left;
 }

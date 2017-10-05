@@ -1,9 +1,5 @@
 page-profile {
-  .app-content{
-    background-color:white;
-    .scroll-content{
-    }
-  }
+
 
   ion-item{
     ion-icon{
@@ -76,6 +72,10 @@ page-profile {
     font-weight:bold;
   }
 
+  .label_top.color{
+    color:gray;
+  }
+
   .bottomborder.subtitle{
     margin-top: 35px;
   }
@@ -83,7 +83,7 @@ page-profile {
   .bottomborder.subpadding{
     margin-top: 7px;
     margin-bottom:7px;
-    padding-left:10px;
+    padding-left:20px;
   }
 
   .helpfont{
@@ -108,6 +108,6 @@ page-profile {
 .profileheader{
   text-align: center;
   background-image: url(../assets/icon/navbar.png);
-  padding-top: 1.4rem;
+  padding-top: 2rem;
 }
 

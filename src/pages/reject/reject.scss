@@ -1,15 +1,5 @@
 page-reject {
-	.app-content{
-    background-color: white;
-    color:black;
-    .scroll-content{
-    }
-    .content-bg{
-        height: 100%;
-        overflow-y: scroll;
-    }
-  }
-
+	
 	.grid-list{
     width: 46vw;
     float: left;
@@ -18,7 +8,7 @@ page-reject {
     margin-left: 2vw;
     margin-right: 2vw;
     font-size: 5vw;
-    height: 13vw;
+    border-radius: 5px;
     background-color: white;
   }
 

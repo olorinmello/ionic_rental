@@ -24,6 +24,17 @@ page-details {
       margin: 5px 0 4px 7px;
     }
   }
+
+  .my-overlay {
+    position: relative;
+    display: inline-block;
+    height: 50vh;
+    width: 100vw;
+    background: rgba(0,0,0,0.7);
+    top: 0;
+    left: 0;
+  }
+
   .card-md{
     box-shadow: none;
   }
@@ -145,7 +156,7 @@ page-details {
 
 .whiteicon{
   color:white;
-  font-size: 2em;
+  font-size: 1.6em;;
   align: center;
 }
 
